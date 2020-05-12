@@ -19,7 +19,12 @@ body {
     background-color: #15447C;
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     align-items: center;
+=======
+    
+   
+>>>>>>> 53d2da984ee653d39fa3b869a4fd69c9add2f45a
 }
 
 .navbar-linkarea_link {
