@@ -7,12 +7,13 @@ body {
 
 .navbar {
     position: relative;
-    height: 29vh;
+    height: 33vh;
     width: 100vw;
     background-image: url(../images/header.png);
     background-color: #B7CDDA;
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: 70%;
     
 }
 
@@ -30,7 +31,7 @@ body {
 
 .navbar-linkarea_link {
     font-family: 'Roboto', sans-serif;
-    font-size:30px;
+    font-size:25px;
     color: white;
     display: inline-block;
     text-align: center;
