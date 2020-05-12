@@ -4,26 +4,24 @@ body {
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    position: relative;
     height: 25vh;
     width: 100vw;
-    background-color: #15447C;
-    /*just for testing!*/
 }
 
 .navbar-linkarea {
+    position: absolute;
+    bottom: 0;
     height: 30%;
     width: 100vw;
-    background-color: red;
-    /*just for testing!*/
+    background-color: #15447C;
+    display: flex;
+    flex-direction: row;
 }
 
 .navbar-linkarea_link {
     color: aqua;
-    display: block;
+    display: inline-block;
     text-align: center;
-    /*just for testing!*/
+    width: 20rem;
 }
