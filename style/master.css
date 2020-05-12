@@ -20,8 +20,11 @@ body {
 }
 
 .navbar-linkarea_link {
-    color: aqua;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
     display: inline-block;
     text-align: center;
     width: 20rem;
+    text-decoration: none;
 }
