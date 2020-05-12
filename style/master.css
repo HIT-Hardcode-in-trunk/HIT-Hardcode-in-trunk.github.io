@@ -20,10 +20,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-<<<<<<< HEAD
-=======
     justify-content: flex-end;
->>>>>>> ff9e1d3375e485805293237492d2ab7a5a7b70e0
 }
 
 .navbar-linkarea_link {
