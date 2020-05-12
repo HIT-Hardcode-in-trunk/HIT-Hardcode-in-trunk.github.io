@@ -7,12 +7,12 @@ body {
 
 .navbar {
     position: relative;
-    height: 25vh;
+    height: 30vh;
     width: 100vw;
     background-image: url(../images/header.png);
     background-color: #B7CDDA;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
 }
 
 .navbar-linkarea {
