@@ -1,1 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.navbar {
+    height: 25vh;
+    width: 100vw;
+    background-color: #15447C; /*just for testing!*/
+}
 
