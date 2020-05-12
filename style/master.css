@@ -7,19 +7,21 @@ body {
 
 .navbar {
     position: relative;
-    height: 33vh;
+    height: 25vh;
     width: 100vw;
     background-image: url(../images/header.png);
     background-color: #B7CDDA;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 70%;
+    background-size: 102vh;
+
     
 }
 
 .navbar-linkarea {
     position: absolute;
     bottom: 0;
+    
     height: 30%;
     width: 100vw;
     background-color: #15447C;
@@ -27,6 +29,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    grid-gap: 0%;
 }
 
 .navbar-linkarea_link {
@@ -38,4 +41,6 @@ body {
     width: 20rem;
     text-decoration: none;
 }
+
+
 
