@@ -1,14 +1,29 @@
 body {
     margin: 0;
     padding: 0;
-    
 }
-
-
 
 .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
     height: 25vh;
     width: 100vw;
-    background-color: #15447C; /*just for testing!*/
+    background-color: #15447C;
+    /*just for testing!*/
 }
 
+.navbar-linkarea {
+    height: 30%;
+    width: 100vw;
+    background-color: red;
+    /*just for testing!*/
+}
+
+.navbar-linkarea_link {
+    color: aqua;
+    display: block;
+    text-align: center;
+    /*just for testing!*/
+}
