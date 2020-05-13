@@ -28,9 +28,9 @@ a {
     background-image: url(../images/skylineheader.png);
     background-color: #B7CDDA;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     /* background-size: 102vh; */
-    background-size: cover;
+    background-size: contain;
 
     
 }
