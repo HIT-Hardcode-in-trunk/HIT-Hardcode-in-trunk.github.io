@@ -78,4 +78,6 @@ border: solid 2px rgba(21, 69, 124, 0.8);
 .hero-images {
 display: flex;
 flex: 1 1 20rem;
+
+flex: 6 1 40rem;
 }
