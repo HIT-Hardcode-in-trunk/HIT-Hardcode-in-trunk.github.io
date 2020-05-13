@@ -31,20 +31,17 @@ a {
 
 .navbar {
     position: relative;
-    height: 25vh;
     width: 100vw;
     background-image: url(../images/skyline-shadow.png);
     background-color: #B7CDDA;
     /* background-repeat: no-repeat; */
     background-position: center left;
-    background-size: 102vh; 
     
 }
 
 .navbar-linkarea {
     position: absolute;
     bottom: 0;
-    
     height: 30%;
     width: 100vw;
     background-color: rgba(21, 69, 124);
@@ -73,10 +70,8 @@ a {
 .hero {
     display: flex;
     background-color:#B7CDDA;
-    ;
 
     /* I've done this because header has 25vh */
-    min-height: 75vh;
  
 }
 
@@ -102,8 +97,6 @@ flex: 1 1 40rem;
 
 .images {
     display: grid;
-    grid-template-columns: repeat(1fr 0.5fr 1fr);
-    grid-template-rows: repeat(2, 1fr);
     -webkit-grid-template-columns: repeat(1fr 0.5fr 1fr);
     -webkit-grid-template-rows: repeat(0.5fr 1fr 1fr);
     gap: 1rem;
