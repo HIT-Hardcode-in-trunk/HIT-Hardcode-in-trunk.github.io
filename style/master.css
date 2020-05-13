@@ -5,9 +5,17 @@ body {
     padding: 0;
 }
 
+h1,p {
+    color: #15447C;
+}
+
 a {
     text-decoration: none;
     color: white;
+}
+
+ .button {
+    color: rgba(21, 69, 124, 0.8);
 }
 
 /* ? helper class its center content */
@@ -39,7 +47,7 @@ a {
     
     height: 30%;
     width: 100vw;
-    background-color: #15447C;
+    background-color: rgba(21, 69, 124);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -80,6 +88,11 @@ border: solid 2px rgba(21, 69, 124, 0.8);
 padding: 2em 4em;
 }
 
+.button {
+    border: solid 2px rgba(21, 69, 124, 0.8);
+    padding: 1em 2em;
+    border-radius: 50px;
+}
 
 .hero-images {
 
