@@ -23,13 +23,14 @@ a {
 
 .navbar {
     position: relative;
-    min-height: 25vh;
+    height: 25vh;
     width: 100vw;
     background-image: url(../images/skyline-shadow.png);
     background-color: #B7CDDA;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 102vh;  
+    /* background-repeat: no-repeat; */
+    background-position: center left;
+    background-size: 102vh; 
+    
 }
 
 .navbar-linkarea {
@@ -63,6 +64,10 @@ a {
 
 .hero {
     display: flex;
+    background-color:#B7CDDA;
+    ;
+
+    /* I've done this because header has 25vh */
     min-height: 75vh;
 }
 
@@ -72,12 +77,11 @@ display: flex;
 flex-direction: column;
 flex: 1 1 20rem;
 border: solid 2px rgba(21, 69, 124, 0.8);
+padding: 2em 4em;
 }
 
 
 .hero-images {
-display: flex;
-flex: 1 1 20rem;
 
 flex: 6 1 40rem;
 }
