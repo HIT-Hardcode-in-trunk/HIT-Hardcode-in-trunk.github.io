@@ -3,10 +3,13 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #B7CDDA;
+
 }
 
 h1,p {
     color: #15447C;
+    font-size: 1.5rem;
 }
 
 a {
@@ -31,11 +34,13 @@ a {
 
 .navbar {
     position: relative;
+   min-height: 25vh;
     width: 100vw;
     background-image: url(../images/skyline-shadow.png);
     background-color: #B7CDDA;
     /* background-repeat: no-repeat; */
     background-position: center left;
+    background-size: cover; 
     
 }
 
@@ -69,9 +74,12 @@ a {
 
 .hero {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color:#B7CDDA;
 
     /* I've done this because header has 25vh */
+
  
 }
 
