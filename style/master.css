@@ -105,11 +105,20 @@ flex: 2 1;
 
 
 .images {
+    position: relative;
     display: grid;
     -webkit-grid-template-columns: repeat(1fr 0.5fr 1fr);
     -webkit-grid-template-rows: repeat(0.5fr 1fr 1fr);
     gap: 1rem;
 
+}
+.btn1 {
+    position: absolute;
+    background-color: rgba(207, 0, 88, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    left: 80px;
+top: 450px;
 }
 .images img {
     width: 100%;
