@@ -29,7 +29,7 @@ a {
     background-color: #B7CDDA;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 102vh;  
+    /* background-size: 102vh;   */
 }
 
 .navbar-linkarea {
