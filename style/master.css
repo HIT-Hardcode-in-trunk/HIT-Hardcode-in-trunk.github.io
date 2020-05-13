@@ -8,6 +8,10 @@ a {
     color: white;
 }
 
+
+
+/* NAVBAR SECTION */
+
 .navbar {
     position: relative;
     height: 25vh;
@@ -47,3 +51,22 @@ a {
 
 
 
+/* MAIN SECTION */
+
+
+.hero {
+    display: flex;
+
+}
+
+.hero-text {
+display: flex;
+flex-direction: column;
+flex: 1;
+}
+
+
+.hero-images {
+display: flex;
+flex: 1;
+}
