@@ -30,7 +30,7 @@ a {
     background-repeat: no-repeat;
     background-position: center top;
     /* background-size: 102vh; */
-    background-size: contain;
+    background-size: cover;
 
     
 }
