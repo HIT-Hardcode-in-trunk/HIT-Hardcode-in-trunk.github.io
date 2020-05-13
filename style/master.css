@@ -62,11 +62,12 @@ a {
 .hero-text {
 display: flex;
 flex-direction: column;
-flex: 1;
+flex: 1 1 20rem;
+border-left: rgba(21, 69, 124, 0.8);
 }
 
 
 .hero-images {
 display: flex;
-flex: 1;
+flex: 1 1 20rem;
 }
