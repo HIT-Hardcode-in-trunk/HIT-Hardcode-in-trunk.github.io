@@ -77,6 +77,7 @@ a {
 
     /* I've done this because header has 25vh */
     min-height: 75vh;
+ 
 }
 
 .hero-text {
@@ -84,7 +85,6 @@ a {
 display: flex;
 flex-direction: column;
 flex: 1 1 20rem;
-border: solid 2px rgba(21, 69, 124, 0.8);
 padding: 2em 4em;
 }
 
@@ -95,8 +95,6 @@ padding: 2em 4em;
 }
 
 .hero-images {
-
-flex: 6 1 40rem;
 padding: 1rem;
 flex: 1 1 40rem;
 }
