@@ -63,7 +63,7 @@ a {
 display: flex;
 flex-direction: column;
 flex: 1 1 20rem;
-border-left: solid 2px rgba(21, 69, 124, 0.8);
+border-right: solid 2px rgba(21, 69, 124, 0.8);
 }
 
 
