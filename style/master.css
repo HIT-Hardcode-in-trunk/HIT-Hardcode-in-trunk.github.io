@@ -7,7 +7,7 @@ body {
 
     /* opening animation */
 
-    animation: opening-web 1s forwards ease-in-out;
+    animation: opening-web 1.2s forwards ease-in-out;
 }
 
 h1, p {
