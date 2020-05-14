@@ -1,0 +1,21 @@
+h2 {
+    font-family: 'Special Elite', cursive;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.attraction-one {
+    background: #B7CDDA;
+}
+
+
+.attraction-one .attraction-one_title
+{
+    background: rgba(21, 69, 124, 0.8);
+    width: 100%;
+    min-height: 30vh;
+
+}
