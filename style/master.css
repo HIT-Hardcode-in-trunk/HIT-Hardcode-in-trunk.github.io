@@ -108,6 +108,15 @@ a {
     cursor: pointer;
 }
 
+
+.button-card {
+    border: solid 2px white;
+    padding: 1em 2em;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
 /* pseudo class */
 
 
