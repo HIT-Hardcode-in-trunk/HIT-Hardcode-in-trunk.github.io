@@ -6,16 +6,57 @@ h2 {
     font-size: 3rem;
     line-height: 3rem;
 }
+h3 {
+    font-family: 'Special Elite', cursive;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2rem;
+}
 
-.attraction-one {
+.card p {
+    color: white;
+    font-family: 'Roboto';
+    
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+}
+#attraction-one {
     background: #B7CDDA;
+    min-height: 100vh;
+    padding-top: 4rem;
 }
 
 
-.attraction-one .attraction-one_title
+#attraction-one .attraction-one_title
 {
     background: rgba(21, 69, 124, 0.8);
     width: 100%;
     min-height: 30vh;
 
+}
+
+.wrapper-one {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+}
+
+.wrapper-one_image {
+width: 565px;
+height: 351px;
+flex: 1;
+margin-right: 1rem;
+margin-left: 2rem;
+}
+
+.card {
+background: rgba(207, 0, 88, 0.8);
+width: 791px;
+height: 351px;
+flex: 2;
+padding: 0rem 2rem;
 }
