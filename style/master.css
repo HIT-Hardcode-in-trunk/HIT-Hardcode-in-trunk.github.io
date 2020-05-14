@@ -4,6 +4,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #B7CDDA;
+
+    /* opening animation */
+
+    animation: opening-web 1s forwards ease-in-out;
 }
 
 h1, p {
@@ -28,6 +32,18 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+
+/* ANIMIATIONS SECTION */
+
+@keyframes opening-web {
+    from {
+  opacity: 0;
+    }
+    to {
+  opacity: 1;
+    }
+  }
 
 /* NAVBAR SECTION */
 
