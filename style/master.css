@@ -102,7 +102,11 @@ a {
     border: solid 2px rgba(21, 69, 124, 0.8);
     padding: 1em 2em;
     border-radius: 50px;
+    cursor: pointer;
 }
+
+/* pseudo class */
+
 
 .hero-images {
     padding: 1rem;
