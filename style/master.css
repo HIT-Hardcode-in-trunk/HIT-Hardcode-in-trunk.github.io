@@ -196,3 +196,19 @@ a {
     left: 70%;
     top: 45%;
 }
+
+
+
+.btn4 {
+    position: absolute;
+    background-color: rgba(207, 0, 88, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    left: 7%;
+    top: 90%;
+}
+
+
+.btn1, .btn2, .btn3, .btn4 {
+    font-family: 'Roboto', sans-serif;
+}
