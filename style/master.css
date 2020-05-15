@@ -16,6 +16,7 @@ body {
 h1, p {
     color: #15447C;
     font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -135,14 +136,7 @@ a {
     gap: 1rem;
 }
 
-.btn1 {
-    position: absolute;
-    background-color: rgba(207, 0, 88, 0.5);
-    padding: 1rem 2rem;
-    border-radius: 25px;
-    left: 7%;
-    top: 45%;
-}
+
 
 .images img {
     width: 100%;
@@ -174,4 +168,31 @@ a {
 
 .image5 {
     grid-column: 2/4;
+}
+
+
+.btn1 {
+    position: absolute;
+    background-color: rgba(14, 0, 207, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    left: 7%;
+    top: 45%;
+}
+
+.btn2 {
+    position: absolute;
+    background-color: rgba(207, 0, 88, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    left: 37%;
+    top: 30%;
+}
+.btn3 {
+    position: absolute;
+    background-color: rgba(207, 0, 88, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    left: 70%;
+    top: 45%;
 }
