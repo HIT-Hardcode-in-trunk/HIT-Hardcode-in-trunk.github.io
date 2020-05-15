@@ -230,3 +230,17 @@ a {
 .btn5:hover, .btn1:hover{
     background-color: rgb(14, 0, 207);
 }
+
+
+
+/* ANIMIATION*/
+.logo-bus {
+  transition: transform .1s;
+  width: 80%;
+  height: 80%;
+  padding-left: 2rem;
+}
+
+.logo-bus:hover {
+    transform: scale(1.1);
+}
