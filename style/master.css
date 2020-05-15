@@ -3,9 +3,7 @@ html {
 scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 600px) {
-    @import url("mobile.css");
-  }
+
 
 body {
     margin: 0;
@@ -248,3 +246,30 @@ a {
 .logo-bus:hover {
     transform: scale(1.1);
 }
+
+
+.navbar-linkarea-mobile {
+    display: none; /*make it not show unless mobile*/
+   
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .navbar-linkarea {
+      display: none;
+    }
+    .navbar-linkarea-mobile {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 30%;
+        width: 100vw;
+        background-color: rgba(21, 69, 124);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        grid-gap: 0%;
+    }
+    
+  }
