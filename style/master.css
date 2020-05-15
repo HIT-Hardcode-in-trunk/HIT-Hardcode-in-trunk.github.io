@@ -208,7 +208,25 @@ a {
     top: 90%;
 }
 
+.btn5 {
+    position: absolute;
+    background-color:  rgba(14, 0, 207, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    left: 60%;
+    top: 90%;
+}
 
-.btn1, .btn2, .btn3, .btn4 {
+
+.btn1, .btn2, .btn3, .btn4, .btn5 {
     font-family: 'Roboto', sans-serif;
+}
+
+
+.btn2:hover, .btn3:hover, .btn4:hover{
+    background-color: rgb(207, 0, 90);
+}
+
+.btn5:hover, .btn1:hover{
+    background-color: rgb(14, 0, 207);
 }
