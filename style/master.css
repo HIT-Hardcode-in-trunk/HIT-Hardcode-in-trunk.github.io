@@ -3,6 +3,10 @@ html {
 scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 600px) {
+    @import url("mobile.css");
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -175,7 +179,7 @@ a {
     position: absolute;
     background-color: rgba(14, 0, 207, 0.5);
     padding: 1rem 2rem;
-    border-radius: 25px;
+    border-radius: 10rem;
     left: 7%;
     top: 45%;
 }
@@ -203,7 +207,7 @@ a {
     position: absolute;
     background-color: rgba(207, 0, 88, 0.5);
     padding: 1rem 2rem;
-    border-radius: 25px;
+    border-radius: 25rem;
     left: 7%;
     top: 90%;
 }
