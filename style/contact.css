@@ -63,16 +63,16 @@ margin-bottom: 2rem;
 footer {
     color: black;
     background: rgb(207, 0, 90);
+    min-height: 5vh;
 
 }
 
 .footer-wrapper {
     display: flex;
     align-items: center;
-    padding: 0rem;
     width: 90%;
     margin: auto;
-    min-height: 10vh;
+ 
     flex-wrap: wrap;
 
 
@@ -87,6 +87,7 @@ footer h4 {
 
 
 footer ul {
+
     display: flex;
     flex: 1 1 20rem;
     list-style: none;
@@ -94,7 +95,7 @@ footer ul {
     align-items: center;
 }
 
-@media screen and (max-width: 817px) {
+@media screen and (max-width: 700px) {
     .footer-wrapper {
         text-align: center;
     }
