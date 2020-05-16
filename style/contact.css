@@ -95,7 +95,7 @@ footer ul {
     align-items: center;
 }
 
-@media screen and (max-width: 817px) {
+@media screen and (max-width: 700px) {
     .footer-wrapper {
         text-align: center;
     }
