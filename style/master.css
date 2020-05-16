@@ -259,38 +259,22 @@ a {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   
     .navbar-linkarea{
         display: flex;
         flex-direction: column;
-        height: 40vh;
+        height: 100vh;
+       
     }
   .hero {
       flex-direction: column;
   }
 
   .logo-bus {
-    transition: transform .1s;
-    width: 50%;
-    height: 50%;
-    padding-left: 2rem;
     margin-bottom:0px;
   }
-}
-
-
-
-
-
-@media only screen and (max-width: 1000px) {
-  
-    .navbar-linkarea{
-        display: flex;
-        flex-direction: column;
-        height: 40vh;
-    }
-  .hero {
-      flex-direction: column;
+  .navbar {
+      height: 70vh;
   }
 }
