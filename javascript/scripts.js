@@ -13,9 +13,11 @@ mobileicon.style.display = "none";
 //event listener to check if the button has been pressed
 menubutton.addEventListener("click", function () {
     //clear the navbar
+    
     mobileicon.style.display = "none";
     menubutton.style.display = "none";
     navbarbuttons.style.height = "80vh";
     navbar.style.height = "80vh";
+    navbarlinksmobile.style.display = "flex"
 
 })
