@@ -24,6 +24,7 @@ h1, p {
 .hero-text h1  {
     font-size: 3rem;
     background: linear-gradient(rgb(137, 158, 184), black);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -292,4 +293,14 @@ a {
   .logo-bus-mobile {
     height: 8vh;
     margin-right: 60%;
+  }
+
+
+
+
+
+  navbar-linkarea-mobile-menu {
+      background-color: yellow;/*temp*/
+      width: 100vw;
+      height: 80vh;
   }
