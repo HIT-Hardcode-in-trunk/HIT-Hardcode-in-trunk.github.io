@@ -39,6 +39,57 @@ line-height: 16px;
 
 }
 
+
+/* Attraction One CARD styling */
+.wrapper-one {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+}
+
+.wrapper-one_image {
+width: 565px;
+height: 351px;
+flex: 1;
+margin-right: 1rem;
+margin-left: 2rem;
+}
+
+.card {
+background: rgba(207, 0, 88, 0.8);
+width: 791px;
+height: 351px;
+flex: 2;
+padding: 0rem 4rem;
+}
+
+
+/* Attraction Two CARD styling */
+.wrapper-one {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+}
+
+.wrapper-one_image {
+width: 565px;
+height: 351px;
+flex: 1;
+margin-right: 1rem;
+margin-left: 2rem;
+}
+
+.card {
+background: rgba(207, 0, 88, 0.8);
+width: 791px;
+height: 351px;
+flex: 2;
+padding: 0rem 4rem;
+}
+
+
+
+/* Attraction Trhre CARD styling */
 .wrapper-one {
     display: flex;
     flex-wrap: wrap;
