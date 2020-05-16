@@ -44,6 +44,8 @@
 .form-wrapper textarea {
     border-radius: 1rem;
     padding: 1rem 4rem;
+    display: flex;
+    margin: auto;
 }
 
 
