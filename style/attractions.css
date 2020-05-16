@@ -20,36 +20,40 @@ h3 {
 .card-three p, 
 .card-four p, 
 .card-five p {
-    color: white;
-    font-family: 'Roboto';
-    
-    font-style: normal;
+color: white;
+font-family: 'Roboto';
+font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 16px;
 }
+
+
+/* Attraction Web I */
+
 #attraction-one {
     background: #B7CDDA;
     min-height: 100vh;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
 }
 
 
 #attraction-one .attraction-one_title
 {
     background: rgba(21, 69, 124, 0.8);
-    width: 98%;
+    width: 100%;
     min-height: 30vh;
 
 }
 
 
-/* Attraction Web I */
 .wrapper {
     display: flex;
     flex-wrap: wrap;
     margin-top: 8rem;
 }
+
+/* ?first card */
 
 .wrapper-one_image {
 width: 565px;
@@ -71,13 +75,8 @@ padding: 0rem 4rem;
 /* Attraction Web II */
 
 
-/* ?first card */
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-}
+/* ?second card */
+
 
 .wrapper-two_image {
 width: 565px;
@@ -118,11 +117,7 @@ padding: 0rem 4rem;
 
 /* Attraction Web III */
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 8rem;
-}
+
 
 .wrapper-four_image {
 width: 565px;
