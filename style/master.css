@@ -60,6 +60,10 @@ a {
   }
 
 /* NAVBAR SECTION */
+.logo-bus {
+position: sticky;
+top: 4rem;
+}
 
 .navbar {
     position: relative;
