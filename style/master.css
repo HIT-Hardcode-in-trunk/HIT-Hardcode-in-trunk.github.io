@@ -64,8 +64,7 @@ a {
 .navbar {
     position: relative;
     min-height: 25vh;
-    width: 100vw;
-    max-width:100vw;
+    width: 98vw;
     background-image: url(../images/skyline-shadow.png);
     background-color: #B7CDDA;
     /* background-repeat: no-repeat; */
@@ -76,7 +75,7 @@ a {
     position: absolute;
     bottom: 0;
     height: 30%;
-    width: 100vw;
+    width: 98vw;
     background-color: rgba(21, 69, 124);
     display: flex;
     flex-direction: row;
@@ -250,6 +249,7 @@ a {
   width: 80%;
   height: 80%;
   padding-left: 2rem;
+  margin-bottom:100px;
 }
 
 .logo-bus:hover {
@@ -257,58 +257,40 @@ a {
 }
 
 
-.navbar-linkarea-mobile {
-    display: none; /*make it not show unless mobile*/
-   
-  }
 
 
 @media only screen and (max-width: 600px) {
-    .navbar-linkarea {
-      display: none;
-
-    }
-    .navbar-linkarea-mobile {
-        display: flex;
-        position: absolute;
-        bottom: 0;
-        height: 30%;
-        width: 100vw;
-        background-color: rgba(21, 69, 124);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        grid-gap: 0%;
-    }
-    .hero {
-       
-        flex-direction: column;
-        
-    }
-
-    .navbar-linkarea-mobile{
-        display: flex;
-        flex-direction: column;
-    }
   
+    .navbar-linkarea{
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+    }
+  .hero {
+      flex-direction: column;
   }
 
-  .logo-bus-mobile {
-    height: 8vh;
-    margin-right: 60%;
-    display: none;
+  .logo-bus {
+    transition: transform .1s;
+    width: 50%;
+    height: 50%;
+    padding-left: 2rem;
+    margin-bottom:0px;
   }
+}
 
- 
- 
 
-.navbar-linkarea_link_mobile {
-    font-family: 'Roboto', sans-serif;
-    
-    font-size: 25px;
-    display: none;
-    text-align: center;
-    width: 20rem;
-    text-decoration: none;
+
+
+
+@media only screen and (max-width: 1000px) {
+  
+    .navbar-linkarea{
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+    }
+  .hero {
+      flex-direction: column;
+  }
 }
