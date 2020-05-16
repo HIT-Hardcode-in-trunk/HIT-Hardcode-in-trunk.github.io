@@ -35,7 +35,7 @@
 
 .form-wrapper label {
     margin: 1rem 1rem;
- 
+    
 }
 
 .form-wrapper input,
@@ -47,10 +47,11 @@
 
 .button-form {
 
-padding: 2rem 10rem;
+padding: 2rem 8rem;
+font-size: 1.5rem;
 
 margin-top: 8rem;
-background: rgb(207, 0, 90);
+background: rgb(207, 0, 90, 0.8);
 border-radius: 2rem;
 color: white;
 border-style: none;
@@ -60,6 +61,11 @@ margin-bottom: 2rem;
 }
 
 
+
+.button-form:hover{
+    background-color: rgb(207, 0, 90);
+    color: black;
+}
 footer {
     color: black;
     background: rgb(207, 0, 90);
