@@ -270,7 +270,6 @@ a {
     }
     .navbar-linkarea-mobile {
         display: flex;
-        display: block;
         position: absolute;
         bottom: 0;
         height: 30%;
@@ -287,20 +286,29 @@ a {
         flex-direction: column;
         
     }
+
+    .navbar-linkarea-mobile{
+        display: flex;
+        flex-direction: column;
+    }
   
   }
 
   .logo-bus-mobile {
     height: 8vh;
     margin-right: 60%;
+    display: none;
   }
 
+ 
+ 
 
-
-
-
-  navbar-linkarea-mobile-menu {
-      background-color: yellow;/*temp*/
-      width: 100vw;
-      height: 80vh;
-  }
+.navbar-linkarea_link_mobile {
+    font-family: 'Roboto', sans-serif;
+    
+    font-size: 25px;
+    display: none;
+    text-align: center;
+    width: 20rem;
+    text-decoration: none;
+}
