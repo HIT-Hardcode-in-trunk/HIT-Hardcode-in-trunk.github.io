@@ -21,6 +21,13 @@ h1, p {
     font-family: 'Roboto', sans-serif;
 }
 
+.hero-text h1  {
+    font-size: 3rem;
+    background: linear-gradient(rgb(137, 158, 184), black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 a {
     text-decoration: none;
     color: white;
