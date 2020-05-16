@@ -35,7 +35,9 @@
 
 .form-wrapper label {
     margin: 1rem 1rem;
-    
+    font-size: 2rem;
+    font-family: Roboto;
+
 }
 
 .form-wrapper input,
