@@ -30,7 +30,6 @@ line-height: 16px;
 }
 #attraction-one {
     background: #B7CDDA;
-    min-height: 100vh;
     padding-top: 4rem;
 }
 
@@ -48,7 +47,8 @@ line-height: 16px;
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 8rem;
+    margin-top: 8em;
+    margin-bottom: 8em;
 }
 
 .wrapper-one_image {
@@ -159,3 +159,5 @@ padding: 0rem 4rem;
     order: 1;
     padding: 0rem 4rem;
     }
+
+

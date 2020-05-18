@@ -281,7 +281,9 @@ a {
 
 
 
-
+#gallery {
+    padding-bottom: 6rem;
+}
 #hexGrid {
     overflow: hidden;
     width: 70%;
