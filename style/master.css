@@ -14,12 +14,13 @@ body {
 
  p {
   color: #15447C;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
   text-align: justify;
 }
 
 .hero-text h1 {
+  font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   background: linear-gradient(rgb(38, 49, 100), rgb(12, 21, 77));
   background-clip: text;
