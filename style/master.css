@@ -20,7 +20,7 @@ h1, p {
 
 .hero-text h1 {
   font-size: 3rem;
-  background: linear-gradient(rgb(137, 158, 184), black);
+  background: linear-gradient(rgb(154, 28, 165), black);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
