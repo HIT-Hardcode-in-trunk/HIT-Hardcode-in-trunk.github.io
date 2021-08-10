@@ -1,0 +1,157 @@
+﻿* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+main {
+  min-height: 100vh;
+  min-width: 100vw; }
+  main .nav-header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative; }
+    main .nav-header .logo-box {
+      display: grid;
+      place-items: center;
+      width: 5em;
+      min-height: 6em; }
+      main .nav-header .logo-box #logo {
+        color: white; }
+      main .nav-header .logo-box .logo-text {
+        position: relative;
+        font-size: 0.5rem;
+        font-family: 'Nova Slim', cursive;
+        letter-spacing: .1rem; }
+      main .nav-header .logo-box:before {
+        position: absolute;
+        padding: 7em;
+        margin: -7em;
+        border-radius: 40%;
+        background: #5A4980;
+        content: '';
+        box-shadow: 0px 0px 10px black; }
+    main .nav-header .navigation {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 70%;
+      visibility: hidden; }
+      main .nav-header .navigation .nav-link {
+        background: transparent;
+        color: black;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        border: 2px solid #5A4980;
+        margin: 2em; }
+      main .nav-header .navigation .active {
+        background: #5A4980;
+        color: white; }
+      main .nav-header .navigation a:hover {
+        background-color: #5A4980;
+        box-shadow: 0px 15px 20px rgba(128, 0, 128, 0.2);
+        color: #fff;
+        transform: translateY(-7px);
+        border: none; }
+    main .nav-header .burger {
+      padding: 1em; }
+      main .nav-header .burger .burger-circle {
+        background: white;
+        padding: 1em;
+        border-radius: 50%; }
+      main .nav-header .burger .line1, main .nav-header .burger .line2 {
+        width: 2em;
+        height: 0.2rem;
+        margin: 0.3rem;
+        background: #5A4980;
+        pointer-events: none; }
+  main .nav-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #5A4980;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+    clip-path: circle(50px at 100% -10%);
+    -webkit-clip-path: circle(50px at 100% -10%); }
+  main .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50vh; }
+    main .nav-links .nav-btn {
+      border: 2px solid white;
+      padding: .5em 1em;
+      border-radius: 10px;
+      color: black;
+      font-size: 1.4rem;
+      color: white;
+      margin: 2em; }
+  main .about {
+    width: 70%;
+    margin: auto; }
+    main .about .about-wrapper {
+      min-height: 70vh; }
+      main .about .about-wrapper .about-text {
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start; }
+        main .about .about-wrapper .about-text h2 {
+          font-size: 1.8rem;
+          font-family: 'Spartan', sans-serif; }
+        main .about .about-wrapper .about-text p {
+          font-family: 'Lato', sans-serif;
+          color: #4C4981;
+          line-height: 1.4rem; }
+      main .about .about-wrapper .about-btn {
+        background: #5A4980;
+        padding: 1em 1em;
+        border-radius: 10px;
+        color: black;
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: .1rem;
+        color: white;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none; }
+      main .about .about-wrapper .about-btn:hover {
+        background-color: #6776FF;
+        box-shadow: 0px 15px 20px rgba(128, 0, 128, 0.2);
+        color: #fff;
+        transform: translateY(-7px); }
+  main .footer {
+    width: 100%;
+    text-align: end; }
+    main .footer .logo-planit img {
+      width: 20%; }
+
+@media (orientation: landscape) {
+  .about .about-wrapper {
+    display: flex; }
+    .about .about-wrapper img {
+      max-width: 130%; }
+    .about .about-wrapper .about-image {
+      order: 1; }
+  .about .footer .logo-planit img {
+    width: 10%; } }
+
+@media (orientation: portrait) {
+  .about-wrapper .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media (min-width: 1000px) {
+  body main .nav-header .navigation {
+    visibility: visible; } }
