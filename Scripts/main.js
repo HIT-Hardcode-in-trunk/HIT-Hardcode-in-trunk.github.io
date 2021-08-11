@@ -1,42 +1,42 @@
 var $progressValue = 0;
 var resultList = [];
-// var video = document.createElement("video");
-// var video1 = document.createTextNode("Tutorix is the best e-learning platform");
-// video.appendChild(video1);
-// var element = document.getElementById("new");
-// element.appendChild(video);
+var video = document.createElement("video");
+var video1 = document.createTextNode("Tutorix is the best e-learning platform");
+video.appendChild(video1);
+var element = document.getElementById("new");
+element.appendChild(video);
 
 
-// function addSourceToVideo(element, src, type) {
-//     var source = document.createElement('source');
+function addSourceToVideo(element, src, type) {
+    var source = document.createElement('source');
 
-//     source.src = src;
-//     source.type = type;
+    source.src = src;
+    source.type = type;
 
-//     element.appendChild(source);
-// }
+    element.appendChild(source);
+}
 
-// var video1 = document.createElement('video');
-// var video2 = document.createElement('video');
-// var video3 = document.createElement('video');
-// // var att1 = document.getElementById("new");
-// // var att2 = document.getElementById("new");
-// // var att3 = document.getElementById("new");
-
-
-// att1.appendChild(video1);
-// att2.appendChild(video2);
-// att3.appendChild(video3);
+var video1 = document.createElement('video');
+var video2 = document.createElement('video');
+var video3 = document.createElement('video');
+var att1 = document.getElementById("new");
+var att2 = document.getElementById("new");
+var att3 = document.getElementById("new");
 
 
-// addSourceToVideo(video1, 'video/good_answer.mp4', 'video/mp4');
-// addSourceToVideo(video2, 'video/good_answer.mp4', 'video/mp4');
-// addSourceToVideo(video3, 'video/good_answer.mp4', 'video/mp4');
+att1.appendChild(video1);
+att2.appendChild(video2);
+att3.appendChild(video3);
 
 
-// video1.play();
-// video2.play();
-// video3.play();
+addSourceToVideo(video1, 'video/good_answer.mp4', 'video/mp4');
+addSourceToVideo(video2, 'video/good_answer.mp4', 'video/mp4');
+addSourceToVideo(video3, 'video/good_answer.mp4', 'video/mp4');
+
+
+video1.play();
+video2.play();
+video3.play();
 
 
 
