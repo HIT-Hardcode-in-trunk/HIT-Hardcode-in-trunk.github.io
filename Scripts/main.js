@@ -110,6 +110,27 @@ function returnOptionList(opts, i) {
     return optionHtml;
 }
 
+
+
+
+// return video options
+function returnVideoList(opts, i) {
+    var videoHtml =
+    '<video class="myvideos"></video>';
+       
+
+    return videoHtml;
+}
+/** Render videos **/
+function renderVideos(optionVideo) {
+    var videoContainer = $("<div>").attr("id", "optionVideo");
+    for (var i = 0, len = optionVideo.length; i < len; i++) {
+        var optionVideoContainer = returnVideoList(optionVideo[i], i);
+        videoContainer.append(optionVideoContainer);
+    }
+    $(".videoOptions").html("").append(videoContainer);
+}
+
 /** Render Options **/
 function renderOptions(optionList) {
     var ulContainer = $("<ul>").attr("id", "optionList");
