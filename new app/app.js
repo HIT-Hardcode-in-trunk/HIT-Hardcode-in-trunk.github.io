@@ -1,25 +1,25 @@
-(function() {
-                              var questions = [{
-                              question: "Question1",
-                              choices: ["choice1", "choice2", "choice3"],
-                              correctAnswer:0
-                              }, {
-                              question: "Question2",
-                              choices: ["choice1", "choice2", "choice3"],
-                              correctAnswer: 4
-                              }, {
-                              question: "Question3",
-                              choices: ["choice1", "choice2", "choice3"],
-                              correctAnswer: 0
-                              }, {
-                              question: "Question4",
-                              choices: ["choice1", "choice2", "choice3"]
-                              correctAnswer: 3
-                              }, {
-                              question: "Question5",
-                              choices: ["choice1", "choice2", "choice3"],
-                              correctAnswer: 4
-                              }];
+
+var questions = [{
+question: "Question1",
+choices: ["choice1", "choice2", "choice3"],
+correctAnswer:0
+}, {
+question: "Question2",
+choices: ["choice1", "choice2", "choice3"],
+correctAnswer: 4
+}, {
+question: "Question3",
+choices: ["choice1", "choice2", "choice3"],
+correctAnswer: 0
+}, {
+question: "Question4",
+choices: ["choice1", "choice2", "choice3"],
+correctAnswer: 3
+}, {
+question: "Question5",
+choices: ["choice1", "choice2", "choice3"],
+correctAnswer: 4
+}];
                               
                               var questionCounter = 0; //Tracks question number
                               var selections = []; //Array containing user choices
@@ -164,4 +164,5 @@
                                            questions.length + ' right!!!');
                               return score;
                               }
-                              })();
+                              });
+();
