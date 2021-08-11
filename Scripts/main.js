@@ -7,36 +7,36 @@ var resultList = [];
 // element.appendChild(video);
 
 
-function addSourceToVideo(element, src, type) {
-    var source = document.createElement('source');
+// function addSourceToVideo(element, src, type) {
+//     var source = document.createElement('source');
 
-    source.src = src;
-    source.type = type;
+//     source.src = src;
+//     source.type = type;
 
-    element.appendChild(source);
-}
+//     element.appendChild(source);
+// }
 
-var video1 = document.createElement('video');
-var video2 = document.createElement('video');
-var video3 = document.createElement('video');
-// var att1 = document.getElementById("new");
-// var att2 = document.getElementById("new");
-// var att3 = document.getElementById("new");
-
-
-att1.appendChild(video1);
-att2.appendChild(video2);
-att3.appendChild(video3);
+// var video1 = document.createElement('video');
+// var video2 = document.createElement('video');
+// var video3 = document.createElement('video');
+// // var att1 = document.getElementById("new");
+// // var att2 = document.getElementById("new");
+// // var att3 = document.getElementById("new");
 
 
-addSourceToVideo(video1, 'video/good_answer.mp4', 'video/mp4');
-addSourceToVideo(video2, 'video/good_answer.mp4', 'video/mp4');
-addSourceToVideo(video3, 'video/good_answer.mp4', 'video/mp4');
+// att1.appendChild(video1);
+// att2.appendChild(video2);
+// att3.appendChild(video3);
 
 
-video1.play();
-video2.play();
-video3.play();
+// addSourceToVideo(video1, 'video/good_answer.mp4', 'video/mp4');
+// addSourceToVideo(video2, 'video/good_answer.mp4', 'video/mp4');
+// addSourceToVideo(video3, 'video/good_answer.mp4', 'video/mp4');
+
+
+// video1.play();
+// video2.play();
+// video3.play();
 
 
 
@@ -56,70 +56,7 @@ const quizdata = [
         answer: ["Answer B:"],
         category: 2
     },
-    // {
-    //     question: "Not having the abilities desired or necessary for any purpose",
-    //     options: ["Incompetent", "Impoverish", "Coxswain", "Devious"],
-    //     answer: "Incompetent",
-    //     category: 3
-    // },
-    // {
-    //     question: "Lizard that changes color in different situations",
-    //     options: ["Scruple", "Depredation", "Chameleon", "Whimsical"],
-    //     answer: "Chameleon",
-    //     category: 1
-    // },
-    // {
-    //     question: "Having the title of an office without the obligations",
-    //     options: ["Reciprocal", "Unsullied", "Titular", "Inflated"],
-    //     answer: "Titular",
-    //     category: 2
-    // },
-    // {
-    //     question:
-    //         "An expression of disapproval or blame personally addressed to one censured",
-    //     options: ["Pitiful", "Reproof", "Mutation", "Raillery"],
-    //     answer: "Reproof",
-    //     category: 3
-    // },
-    // {
-    //     question: "To deliver an elaborate or formal public speech.",
-    //     options: ["Orate", "Magician", "Access", "Guzzle"],
-    //     answer: "Orate",
-    //     category: 2
-    // },
-    // {
-    //     question:
-    //         "A wharf or artificial landing-place on the shore of a harbor or projecting into it",
-    //     options: ["Intolerable", "Quay", "Fez", "Insatiable"],
-    //     answer: "Quay",
-    //     category: 3
-    // },
-    // {
-    //     question:
-    //         "Friendly counsel given by way of warning and implying caution or reproof",
-    //     options: ["Credence", "Colloquy", "Abyss", "Monition"],
-    //     answer: "Monition",
-    //     category: 1
-    // },
-    // {
-    //     question: "To make a beginning in some occupation or scheme",
-    //     options: ["Muster", "Embark", "Ocular", "Apprehensible"],
-    //     answer: "Ocular",
-    //     category: 2
-    // },
-    // {
-    //     question: "Able to reinforce sound by sympathetic vibrations",
-    //     options: ["Resonance", "Clandestine", "Diffusion", "Quietus"],
-    //     answer: "Resonance",
-    //     category: 3
-    // },
-    // {
-    //     question:
-    //         "To send off or consign, as to an obscure position or remote destination",
-    //     options: ["Monolith", "Endurable", "Efficient", "Relegate"],
-    //     answer: "Relegate",
-    //     category: 1
-    // }
+ 
 ];
 /** Random shuffle questions **/
 function shuffleArray(question) {
