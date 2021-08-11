@@ -161,12 +161,6 @@ main .nav-header .back .right-chevron:after {
   background-size: cover;
 }
 
-.activities .activities-wrapper .greetings-video {
-  padding-top: 4em;
-  width: 60vw;
-  height: 70vh;
-}
-
 .activities .activities-wrapper .card-content button {
   padding: 0.8em 2em;
   background: #ee3b40;
