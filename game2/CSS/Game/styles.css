@@ -13,8 +13,6 @@ body {
 }
 
 .quizArea {
-  background: url("/Images/intro-img.png");
-
   width: 95%;
   margin: auto;
   padding: 10px;
