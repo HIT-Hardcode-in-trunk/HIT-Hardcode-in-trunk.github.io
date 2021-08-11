@@ -3,43 +3,41 @@ var resultList = [];
 
 
 
-// function addSourceToVideo(element, src, type) {
-//     var source = document.createElement('source');
+function addSourceToVideo(element, src, type) {
+    var source = document.createElement('source');
 
-//     source.src = src;
-//     source.type = type;
+    source.src = src;
+    source.type = type;
 
-//     element.appendChild(source);
-// }
+    element.appendChild(source);
+}
 
-// var video1 = document.createElement('video');
-// var video2 = document.createElement('video');
-// var video3 = document.createElement('video');
-// var att1 = document.getElementById("new");
-// var att2 = document.getElementById("new");
-// var att3 = document.getElementById("new");
-
-
-// att1.appendChild(video1);
-// att2.appendChild(video2);
-// att3.appendChild(video3);
+var video1 = document.createElement('video');
+var video2 = document.createElement('video');
+var video3 = document.createElement('video');
+var att1 = document.getElementByClass("myvideos");
+var att2 = document.getElementByClass("myvideos");
+var att3 = document.getElementByClass("myvideos");
 
 
-// addSourceToVideo(video1, 'video/good_answer.mp4', 'video/mp4');
-// addSourceToVideo(video2, 'video/good_answer.mp4', 'video/mp4');
-// addSourceToVideo(video3, 'video/good_answer.mp4', 'video/mp4');
+att1.appendChild(video1);
+att2.appendChild(video2);
+att3.appendChild(video3);
 
 
-// video1.play();
-// video2.play();
-// video3.play();
+addSourceToVideo(video1, 'video/good_answer.mp4', 'video/mp4');
+addSourceToVideo(video2, 'video/good_answer.mp4', 'video/mp4');
+addSourceToVideo(video3, 'video/good_answer.mp4', 'video/mp4');
+
+
+
 
 
 
 const quizdata = [
     {
-        question:
-            "Why have you applied for the job?",
+        question:"Why have you applied for the job?",
+        videos: [video1, video2, video3],
         options: ["Answer A:", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1
