@@ -1,10 +1,6 @@
 var $progressValue = 0;
 var resultList = [];
-var video = document.createElement("video");
-var video1 = document.createTextNode("Tutorix is the best e-learning platform");
-video.appendChild(video1);
-var element = document.getElementById("new");
-element.appendChild(video);
+
 
 
 function addSourceToVideo(element, src, type) {
