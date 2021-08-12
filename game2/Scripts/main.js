@@ -6,8 +6,9 @@ var next = document.getElementById('next');
   
 
 next.addEventListener('click',function(){
-  video.stop();
-  },
+  video.load();
+  video.play();
+  },false);
 
 
 const quizdata = [
