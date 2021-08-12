@@ -136,12 +136,12 @@ function directPercent(number, total) {
 }
 
 /** percentage Calculation **/
-function percentCalculation(array, total) {
-    var percent = array.map(function (d, i) {
-        return ((100 * d) / total).toFixed(2);
-    });
-    return percent;
-}
+// function percentCalculation(array, total) {
+//     var percent = array.map(function (d, i) {
+//         return ((100 * d) / total).toFixed(2);
+//     });
+//     return percent;
+// }
 
 /*** Get percentage for chart **/
 function getPercentage(resultByCat, wrong) {
