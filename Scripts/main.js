@@ -26,7 +26,7 @@ att2.appendChild(video2);
 att3.appendChild(video3);
 
 
-// addSourceToVideo(video1, 'https://mp.streamamg.com/p/2000137/sp/200013700/embedIframeJs/uiconf_id/30030571/partner_id/2000137', 'video/mp4');
+addSourceToVideo(video1, 'https://mp.streamamg.com/p/2000137/sp/200013700/embedIframeJs/uiconf_id/30030571/partner_id/2000137', 'video/mp4');
 addSourceToVideo(video2, 'video/good_answer.mp4', 'video/mp4');
 addSourceToVideo(video3, 'video/good_answer.mp4', 'video/mp4');
 
