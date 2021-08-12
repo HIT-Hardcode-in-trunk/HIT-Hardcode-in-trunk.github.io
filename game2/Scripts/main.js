@@ -1,7 +1,15 @@
 var $progressValue = 0;
 var resultList = [];
 var scoreList = [];
-var video1 = document.getElementsByClassName ('.video1');
+var video = document.getElementById('video1');
+var next = document.getElementById('next');
+  
+
+next.addEventListener('click',function(video){
+  video.load();
+  video.play();
+  },false);
+
 
 const quizdata = [
     {
