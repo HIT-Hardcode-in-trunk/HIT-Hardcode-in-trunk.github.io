@@ -111,14 +111,14 @@ function returnOptionList(opts, i) {
 // return video options
 function returnVideoList(opts, i) {
     var videoHtml =
-    '<video class="myvideos"></video>';
+    '<li class="myvideos"></li>';
        
 
     return videoHtml;
 }
 /** Render videos **/
 function renderVideos(optionVideo) {
-    var videoContainer = $("<div>").attr("id", "optionVideo");
+    var videoContainer = $("<ul>").attr("id", "videoList");
     for (var i = 0, len = optionVideo.length; i < len; i++) {
         var optionVideoContainer = returnVideoList(optionVideo[i], i);
         videoContainer.append(optionVideoContainer);
