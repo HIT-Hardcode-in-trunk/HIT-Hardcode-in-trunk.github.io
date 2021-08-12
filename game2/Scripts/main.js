@@ -14,7 +14,7 @@ next.addEventListener('click',function(){
 const quizdata = [
     {
         question:"Why have you applied for the job?",
-        video: "videoOption_0",
+        video: ["videoOption_1", "videoOption_2"],
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
