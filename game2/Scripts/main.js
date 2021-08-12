@@ -426,8 +426,9 @@ $(document).ready(function () {
         }
     });
 
-    $("#next").on("click", function (e) {
-        e.preventDefault();
+    $("#next").on("click", function (video1) {
+
+        video1.preventDefault();
         addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
 
         $(this).addClass("hidden");
