@@ -5,7 +5,7 @@ var video = document.getElementById('#video1');
 var next = document.getElementById('#next');
   
 
-next.addEventListener('click',function(e){
+next.addEventListener('click',function(){
   video.load();
   video.play();
   },false);
