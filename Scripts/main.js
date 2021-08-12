@@ -1,5 +1,6 @@
 var $progressValue = 0;
 var resultList = [];
+var videoList = [];
 
 
 
