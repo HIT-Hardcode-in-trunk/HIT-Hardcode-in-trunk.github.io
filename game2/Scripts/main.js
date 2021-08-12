@@ -7,7 +7,7 @@ var next = document.getElementById('next');
 
 next.addEventListener('click',function(){
   video.load();
-  video.play();
+  video.stop();
   },false);
 
 
