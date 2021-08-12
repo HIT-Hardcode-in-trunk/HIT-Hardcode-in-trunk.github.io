@@ -3,7 +3,6 @@ var resultList = [];
 var scoreList = [];
 var video1 = document.getElementsByClassName ('.video1');
 
-video1.preventDefault()
 
 const quizdata = [
     {
@@ -427,7 +426,6 @@ $(document).ready(function () {
     });
 
     $("#next").on("click", function (e) {
-
         e.preventDefault();
         addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
 
