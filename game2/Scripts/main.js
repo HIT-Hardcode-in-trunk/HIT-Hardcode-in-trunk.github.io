@@ -6,7 +6,7 @@ var video1 = document.getElementsByClassName ('.video1');
 const quizdata = [
     {
         question:"Why have you applied for the job?",
-        video: [".video1" ],
+        video: "videoOption_0",
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
@@ -15,6 +15,7 @@ const quizdata = [
     {
         question:
             "Second Question",
+        video: "videoOption_1",
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
         category: 2,
@@ -23,6 +24,7 @@ const quizdata = [
     {
         question:
             "Very Important Question",
+        video: "videoOption_3",
         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         answer: ["Very Important Option 2"],
         category: 2,
@@ -389,7 +391,10 @@ function addClickedAnswerToResult(questions, presentIndex, clicked,scoreClicked,
 }
 
 $(document).ready(function () {
+    $(".videoOptions > div").addClass("hidden");
+
     var presentIndex = 0;
+    $("#videoOption_" + presentIndex).removeClass("hidden");
     var clicked = 0;
     //var clickedIdx = 0;
     var clickedScore = 0;
@@ -424,8 +429,9 @@ $(document).ready(function () {
         addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
 
         $(this).addClass("hidden");
-
+        $(".videoOptions > div").addClass("hidden");
         presentIndex++;
+        $("#videoOption_" + presentIndex).removeClass("hidden");
         renderQuiz(questions, presentIndex);
         changeProgressValue();
     });
