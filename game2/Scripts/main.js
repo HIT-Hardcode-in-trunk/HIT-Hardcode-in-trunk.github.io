@@ -3,7 +3,6 @@ var resultList = [];
 var scoreList = [];
 var video1 = document.getElementsByClassName ('.video1');
 
-
 const quizdata = [
     {
         question:"Why have you applied for the job?",
