@@ -6,7 +6,7 @@ var next = document.getElementById('next');
   
 
 next.addEventListener('click',function(e){
-preventDefault(e);
+video.preventDefault(e);
   });
 
 
