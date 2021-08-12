@@ -15,9 +15,9 @@ function addSourceToVideo(element, src, type) {
 var video1 = document.createElement('video');
 var video2 = document.createElement('video');
 var video3 = document.createElement('video');
-var att1 = document.getElementByClass("myvideos");
-var att2 = document.getElementByClass("myvideos");
-var att3 = document.getElementByClass("myvideos");
+var att1 = document.getElementByClass("new");
+var att2 = document.getElementByClass("new");
+var att3 = document.getElementByClass("new");
 
 
 att1.appendChild(video1);
