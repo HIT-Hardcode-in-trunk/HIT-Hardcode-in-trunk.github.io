@@ -5,10 +5,9 @@ var video = document.getElementById('video1');
 var next = document.getElementById('next');
   
 
-next.addEventListener('click',function(){
-  video.load();
-  video.play();
-  },false);
+next.addEventListener('click',function(e){
+preventDefault(e);
+  });
 
 
 const quizdata = [
