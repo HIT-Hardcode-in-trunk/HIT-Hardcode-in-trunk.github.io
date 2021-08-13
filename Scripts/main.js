@@ -1,56 +1,43 @@
 var $progressValue = 0;
 var resultList = [];
-var videoList = [];
+var scoreList = [];
+var video = document.getElementById('video1');
+var next = document.getElementById('next');
+  
 
-
-
-function addSourceToVideo(element, src, type) {
-    var source = document.createElement('source');
-
-    source.src = src;
-    source.type = type;
-
-    element.appendChild(source);
-}
-
-var video1 = document.createElement('video');
-var video2 = document.createElement('video');
-var video3 = document.createElement('video');
-var att1 = document.getElementById("optionVideo");
-var att2 = document.getElementById("optionVideo");
-var att3 = document.getElementById("optionVideo");
-
-
-att1.appendChild(video1);
-att2.appendChild(video2);
-att3.appendChild(video3);
-
-
-addSourceToVideo(video1, 'https://mp.streamamg.com/p/2000137/sp/200013700/embedIframeJs/uiconf_id/30030571/partner_id/2000137', 'video/mp4');
-addSourceToVideo(video2, 'video/good_answer.mp4', 'video/mp4');
-addSourceToVideo(video3, 'video/good_answer.mp4', 'video/mp4');
-
-
-
-
+next.addEventListener('click',function(){
+  video.load();
+  video.stop();
+  },false);
 
 
 const quizdata = [
     {
         question:"Why have you applied for the job?",
-        videos: [video1, video2, video3],
-        options: ["Answer A:", "Answer B:", "Answer C:"],
+        video: ["videoOption_1", "videoOption_2"],
+        options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
-        category: 1
-        
+        category: 1,
+        optionScores :[0,50,10]
     },
     {
         question:
             "Second Question",
+        video:  ["videoOption_1", "videoOption_2"],
         options: ["Option 1", "Option 2", "Option 3"],
-        answer: ["Answer B:"],
-        category: 2
+        answer: ["Option 2"],
+        category: 2,
+        optionScores: [0, 50, 10]
     },
+    {
+        question:
+            "Very Important Question",
+        video: "videoOption_3",
+        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
+        answer: ["Very Important Option 2"],
+        category: 2,
+        optionScores: [0, 90, 10]
+    }
  
 ];
 /** Random shuffle questions **/
@@ -105,27 +92,6 @@ function returnOptionList(opts, i) {
     return optionHtml;
 }
 
-
-
-
-// return video options
-function returnVideoList(opts, i) {
-    var videoHtml =
-    '<li class="myvideos"></li>';
-       
-
-    return videoHtml;
-}
-/** Render videos **/
-function renderVideos(optionVideo) {
-    var videoContainer = $("<ul>").attr("id", "videoList");
-    for (var i = 0, len = optionVideo.length; i < len; i++) {
-        var optionVideoContainer = returnVideoList(optionVideo[i], i);
-        videoContainer.append(optionVideoContainer);
-    }
-    $(".videoOptions").html("").append(videoContainer);
-}
-
 /** Render Options **/
 function renderOptions(optionList) {
     var ulContainer = $("<ul>").attr("id", "optionList");
@@ -165,11 +131,18 @@ function correctAnswerArray(resultByCat) {
     return arrayForChart;
 }
 /** Generate array for percentage calculation **/
-function genResultArray(results, wrong) {
+function genResultArray(results, wrong, scoreTotal, scoreMaxPossTotal) {
     var resultByCat = resultByCategory(results);
     var arrayForChart = correctAnswerArray(resultByCat);
     arrayForChart.push(wrong);
     return arrayForChart;
+}
+
+//// direct percentage //////////
+function directPercent(number, total) {
+    if(number==0 && total==0) return -1//bad parameter error
+    if (number == 0) return 0
+    else return 100*((number / total).toFixed(2));
 }
 
 /** percentage Calculation **/
@@ -191,14 +164,16 @@ function getPercentage(resultByCat, wrong) {
 /** count right and wrong answer number **/
 function countAnswers(results) {
     var countCorrect = 0,
-        countWrong = 0;
-
+        countWrong = 0,
+        scoreTotal = 0,
+        scoreMaxPossTotal= 0;
     for (var i = 0; i < results.length; i++) {
         if (results[i].iscorrect == true) countCorrect++;
         else countWrong++;
+        scoreTotal += results[i].clickedScore;
+        scoreMaxPossTotal += results[i].maxPossScore;
     }
-
-    return [countCorrect, countWrong];
+    return [countCorrect, countWrong, scoreTotal,scoreMaxPossTotal];
 }
 
 /**** Categorize result *****/
@@ -269,7 +244,7 @@ function totalPieChart(_upto, _cir_progress_id, _correct, _incorrect) {
     }
 }
 
-function renderBriefChart(correct, total, incorrect) {
+function renderBriefChart(correct, total, incorrect,scoreTotal,scoremaxpossTotal) {
     var percent = (100 * correct) / total;
     if (Math.round(percent) !== percent) {
         percent = percent.toFixed(2);
@@ -318,10 +293,16 @@ function renderChart(data) {
 *****/
 function getAllAnswer(results) {
     var innerhtml = "";
+    var totalScore = countAnswers(results)[2];
+    var totalPossMaxScore = countAnswers(results)[3];
+    var totalScorePercent = directPercent(totalScore, totalPossMaxScore);
     for (var i = 0; i < results.length; i++) {
         var _class = results[i].iscorrect ? "item-correct" : "item-incorrect";
         var _classH = results[i].iscorrect ? "h-correct" : "h-incorrect";
-
+        var questionScore = results[i].clickedScore;
+        var questionMaxPossScore = results[i].maxPossScore;
+        var questionPercent = directPercent(questionScore, questionMaxPossScore);
+        var questionPercentofTotalMaxPossScore = directPercent(questionScore, totalPossMaxScore);
         var _html =
             '<div class="_resultboard ' +
             _class +
@@ -333,6 +314,11 @@ function getAllAnswer(results) {
             _classH +
             '">' +
             results[i].clicked +
+            "</div>" +
+            '<div class="_yourscore ' +
+            _classH +
+            '">' +
+            questionScore + " / "+questionMaxPossScore +" Q("+questionPercent+"%) Qtotal("+questionPercentofTotalMaxPossScore+"%) Total("+totalScorePercent+"%)"+
             "</div>";
 
         var html = "";
@@ -349,16 +335,20 @@ function renderResult(resultList) {
     var results = resultList;
     console.log(results);
     var countCorrect = countAnswers(results)[0],
-        countWrong = countAnswers(results)[1];
+        countWrong = countAnswers(results)[1],
+        scoreTotal = countAnswers(results)[2];
+    scoreMaxPossTotal = countAnswers(results)[3];
 
-    renderBriefChart(countCorrect, resultList.length, countWrong);
+    renderBriefChart(countCorrect, resultList.length, countWrong, scoreTotal, scoreMaxPossTotal);
 }
 
 function renderChartResult() {
     var results = resultList;
     var countCorrect = countAnswers(results)[0],
-        countWrong = countAnswers(results)[1];
-    var dataForChart = genResultArray(resultList, countWrong);
+        countWrong = countAnswers(results)[1],
+        scoreTotal = countAnswers(results)[2];
+    scoreMaxPossTotal = countanswers(results)[3];
+    var dataForChart = genResultArray(resultList, countWrong, scoreTotal, scoreMaxPossTotal);
     renderChart(dataForChart);
 }
 
@@ -390,7 +380,7 @@ function changeProgressValue() {
     }
     $(".js-my-progress-completion").html($("progress").val() + "% complete");
 }
-function addClickedAnswerToResult(questions, presentIndex, clicked) {
+function addClickedAnswerToResult(questions, presentIndex, clicked,scoreClicked,maxpossScore) {
     var correct = getCorrectAnswer(questions, presentIndex);
     var result = {
         index: presentIndex,
@@ -398,7 +388,9 @@ function addClickedAnswerToResult(questions, presentIndex, clicked) {
         clicked: clicked,
         iscorrect: clicked == correct ? true : false,
         answer: correct,
-        category: questions[presentIndex].category
+        category: questions[presentIndex].category,
+        clickedScore: scoreClicked,
+        maxPossScore: maxpossScore
     };
     resultList.push(result);
 
@@ -407,16 +399,31 @@ function addClickedAnswerToResult(questions, presentIndex, clicked) {
 }
 
 $(document).ready(function () {
-    var presentIndex = 0;
-    var clicked = 0;
+    $(".videoOptions > div").addClass("hidden");
 
+    var presentIndex = 0;
+    $("#videoOption_" + presentIndex).removeClass("hidden");
+    var clicked = 0;
+    //var clickedIdx = 0;
+    var clickedScore = 0;
+    var maxPossScore = 0;
     var questions = generateQuestions();
     renderQuiz(questions, presentIndex);
     getProgressindicator(questions.length);
 
     $(".answerOptions ").on("click", ".myoptions>input", function (e) {
+        //initialise - zero the globals
+        clicked = 0;
+        clickedScore = 0;
+        maxPosScore = 0;
         clicked = $(this).val();
-
+       var  clickedIdx = this.id.replace("rd_", "");
+        clickedScore = questions[presentIndex].optionScores[clickedIdx];
+        for (var i = 0; i < questions[presentIndex].optionScores.length; i++) {
+            if (questions[presentIndex].optionScores[i] > maxPossScore) {
+                maxPossScore = questions[presentIndex].optionScores[i];
+            }
+        }
         if (questions.length == presentIndex + 1) {
             $("#submit").removeClass("hidden");
             $("#next").addClass("hidden");
@@ -427,17 +434,18 @@ $(document).ready(function () {
 
     $("#next").on("click", function (e) {
         e.preventDefault();
-        addClickedAnswerToResult(questions, presentIndex, clicked);
+        addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
 
         $(this).addClass("hidden");
-
+        $(".videoOptions > div").addClass("hidden");
         presentIndex++;
+        $("#videoOption_" + presentIndex).removeClass("hidden");
         renderQuiz(questions, presentIndex);
         changeProgressValue();
     });
 
     $("#submit").on("click", function (e) {
-        addClickedAnswerToResult(questions, presentIndex, clicked);
+        addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
         $(".multipleChoiceQues").hide();
         $(".resultArea").show();
         renderResult(resultList);
