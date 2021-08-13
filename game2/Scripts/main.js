@@ -6,8 +6,8 @@ var video1 = document.getElementsByClassName ('.video1');
 const quizdata = [
     {
         question: "Why have you applied for the job?",
-        videoOption: ["videoOption_0"],
-        playerId: ["kaltura_player_1628782791", "kaltura_player_1628782914"],
+        videoOption: "videoOption_0",
+        playerId: "kaltura_player_1628782791",
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
