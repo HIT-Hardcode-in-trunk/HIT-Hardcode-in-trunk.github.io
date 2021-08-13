@@ -1,20 +1,12 @@
 var $progressValue = 0;
 var resultList = [];
 var scoreList = [];
-// var video = document.getElementById('video1');
-// var next = document.getElementById('next');
-  
-
-// next.addEventListener('click',function(){
-//   video.load();
-//   video.stop();
-//   },false);
-
+var video1 = document.getElementsByClassName ('.video1');
 
 const quizdata = [
     {
         question:"Why have you applied for the job?",
-        video: ["videoOption_2", "videoOption_1"],
+        video: "videoOption_0",
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
@@ -23,7 +15,7 @@ const quizdata = [
     {
         question:
             "Second Question",
-        video:  ["videoOption_1", "videoOption_2"],
+        video: "videoOption_1",
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
         category: 2,
@@ -438,6 +430,9 @@ $(document).ready(function () {
 
         $(this).addClass("hidden");
         $(".videoOptions > div").addClass("hidden");
+        var playerId = $("#videoOption_" + presentIndex + "_PlayerId").val();
+        var kdp = document.getElementById(playerId);
+        kdp.sendNotification("doStop");
         presentIndex++;
         $("#videoOption_" + presentIndex).removeClass("hidden");
         renderQuiz(questions, presentIndex);
@@ -445,7 +440,10 @@ $(document).ready(function () {
     });
 
     $("#submit").on("click", function (e) {
-        addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
+        addClickedAnswerToResult(questions, presentIndex, clicked, clickedScore, maxPossScore);
+        var playerId = $("#videoOption_" + presentIndex + "_PlayerId").val();
+        var kdp = document.getElementById(playerId);
+        kdp.sendNotification("doStop");
         $(".multipleChoiceQues").hide();
         $(".resultArea").show();
         renderResult(resultList);
