@@ -5,8 +5,10 @@ var video1 = document.getElementsByClassName ('.video1');
 
 const quizdata = [
     {
-        question:"Why have you applied for the job?",
-        video: ["videoOption_0", "videoOption_1"],
+        question: "Why have you applied for the job?",
+        
+        videoOption: "videoOption_0",
+        playerId: "kaltura_player_1628782791",
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
@@ -15,7 +17,9 @@ const quizdata = [
     {
         question:
             "Second Question",
-        video: "videoOption_1",
+        
+        videoOption: "videoOption_1",
+playerId: "kaltura_player_1628782914",
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
         category: 2,
@@ -24,7 +28,9 @@ const quizdata = [
     {
         question:
             "Very Important Question",
-        video: "videoOption_3",
+        
+        videoOption: "videoOption_2",
+playerId: "kaltura_player_1628782968",
         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         answer: ["Very Important Option 2"],
         category: 2,
@@ -132,7 +138,7 @@ function genResultArray(results, wrong, scoreTotal, scoreMaxPossTotal) {
 
 //// direct percentage //////////
 function directPercent(number, total) {
-    if(number==0 && total==0) return -1//bad parameter error
+    if(total==0) return -1//bad parameter error
     if (number == 0) return 0
     else return 100*((number / total).toFixed(2));
 }
@@ -394,12 +400,13 @@ $(document).ready(function () {
     $(".videoOptions > div").addClass("hidden");
 
     var presentIndex = 0;
-    $("#videoOption_" + presentIndex).removeClass("hidden");
+    
     var clicked = 0;
     //var clickedIdx = 0;
     var clickedScore = 0;
     var maxPossScore = 0;
     var questions = generateQuestions();
+$("#" + questions[presentIndex].videoOption).removeClass("hidden");
     renderQuiz(questions, presentIndex);
     getProgressindicator(questions.length);
 
@@ -430,19 +437,17 @@ $(document).ready(function () {
 
         $(this).addClass("hidden");
         $(".videoOptions > div").addClass("hidden");
-        var playerId = $("#videoOption_" + presentIndex + "_PlayerId").val();
-        var kdp = document.getElementById(playerId);
+        var kdp = document.getElementById(questions[presentIndex].playerId);
         kdp.sendNotification("doStop");
         presentIndex++;
-        $("#videoOption_" + presentIndex).removeClass("hidden");
+        $("#" + questions[presentIndex].videoOption).removeClass("hidden");
         renderQuiz(questions, presentIndex);
         changeProgressValue();
     });
 
     $("#submit").on("click", function (e) {
         addClickedAnswerToResult(questions, presentIndex, clicked, clickedScore, maxPossScore);
-        var playerId = $("#videoOption_" + presentIndex + "_PlayerId").val();
-        var kdp = document.getElementById(playerId);
+        var kdp = document.getElementById(questions[presentIndex].playerId);
         kdp.sendNotification("doStop");
         $(".multipleChoiceQues").hide();
         $(".resultArea").show();
