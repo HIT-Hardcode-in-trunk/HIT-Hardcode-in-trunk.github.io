@@ -404,7 +404,7 @@ $(document).ready(function () {
     var presentIndex = 0;
     $("#videoOption_" + presentIndex).removeClass("hidden");
     var clicked = 0;
-    //var clickedIdx = 0;
+    var clickedIdx = 0;
     var clickedScore = 0;
     var maxPossScore = 0;
     var questions = generateQuestions();
