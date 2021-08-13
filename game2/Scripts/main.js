@@ -14,7 +14,7 @@ var scoreList = [];
 const quizdata = [
     {
         question:"Why have you applied for the job?",
-        video: ["videoOption_2"],
+        video: ["videoOption_2", "videoOption_1"],
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
@@ -23,7 +23,7 @@ const quizdata = [
     {
         question:
             "Second Question",
-        // video:  ["videoOption_1", "videoOption_2"],
+        video:  ["videoOption_1", "videoOption_2"],
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
         category: 2,
