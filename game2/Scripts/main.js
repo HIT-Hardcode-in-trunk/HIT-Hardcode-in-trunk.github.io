@@ -6,7 +6,7 @@ var video1 = document.getElementsByClassName ('.video1');
 const quizdata = [
     {
         question:"Why have you applied for the job?",
-        video: "videoOption_0",
+        video: ["videoOption_0", "videoOption_1"],
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
