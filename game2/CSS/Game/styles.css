@@ -54,6 +54,11 @@ body {
   justify-content: space-around;
 }
 
+.videoRow {
+  display: flex;
+  justify-content: space-around;
+}
+
 .buttonArea {
   text-align: right;
   height: 4.5em;
