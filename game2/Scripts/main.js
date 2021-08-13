@@ -19,8 +19,7 @@ const quizdata = [
         
         videoOption: "videoOption_1",
 playerId: "kaltura_player_1628782914",
-// playerId: "kaltura_player_1628693936",
-// playerId: "kaltura_player_1628690985",
+
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
         category: 2,
@@ -30,7 +29,7 @@ playerId: "kaltura_player_1628782914",
         question:
             "Very Important Question",
         
-        videoOption: "videoOption_2",
+        // videoOption: "videoOption_2",
 playerId: "kaltura_player_1628782968",
         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         answer: ["Very Important Option 2"],
