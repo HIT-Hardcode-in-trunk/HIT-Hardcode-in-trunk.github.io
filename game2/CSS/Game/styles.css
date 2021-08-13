@@ -49,6 +49,11 @@ body {
   outline: rgba(0, 0, 0, 0.3) 2px solid;
 }
 
+.videoOptions {
+  display: flex;
+  justify-content: space-around;
+}
+
 .videoRow {
   display: flex;
   justify-content: space-around;
