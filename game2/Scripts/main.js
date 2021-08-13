@@ -1,14 +1,14 @@
 var $progressValue = 0;
 var resultList = [];
 var scoreList = [];
-var video = document.getElementById('video1');
-var next = document.getElementById('next');
+// var video = document.getElementById('video1');
+// var next = document.getElementById('next');
   
 
-next.addEventListener('click',function(){
-  video.load();
-  video.stop();
-  },false);
+// next.addEventListener('click',function(){
+//   video.load();
+//   video.stop();
+//   },false);
 
 
 const quizdata = [
