@@ -437,7 +437,7 @@ $("#" + questions[presentIndex].videoOption).removeClass("hidden");
         addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
 
         $(this).addClass("hidden");
-        $(".videoOptions > div").addClass("hidden");
+        $(".videoOptions > div").addClass("#");
         var kdp = document.getElementById(questions[presentIndex].playerId);
         kdp.sendNotification("doStop");
         presentIndex++;
