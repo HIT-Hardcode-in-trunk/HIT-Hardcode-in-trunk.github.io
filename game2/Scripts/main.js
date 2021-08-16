@@ -7,7 +7,7 @@ const quizdata = [
     {
         question: "Why have you applied for the job?",
         videoOption: ["videoOption_0", "videoOption_2"],
-        playerId: ["kaltura_player_1628782791","kaltura_player_1628782914"],
+        playerId: ["kaltura_player_1628782791","kaltura_player_1628782968"],
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
