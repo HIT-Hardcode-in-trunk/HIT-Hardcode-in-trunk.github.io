@@ -398,7 +398,7 @@ function addClickedAnswerToResult(questions, presentIndex, clicked,scoreClicked,
 }
 
 $(document).ready(function () {
-    $(".videoOptions > div").addClass("hidden");
+    $(".videoOptions > div").addClass("#");
 
     var presentIndex = 0;
     
