@@ -17,8 +17,8 @@ const quizdata = [
         question:
             "Second Question",
         
-        // videoOption: ["videoOption_1", "videoOption_2"],
-        // playerId: "kaltura_player_1628782914",
+        videoOption: ["videoOption_1", "videoOption_2"],
+        playerId: "kaltura_player_1628782914",
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
         answerVideoOptions: ["videoOption_0", "videoOption_1", "videoOption_2"],
