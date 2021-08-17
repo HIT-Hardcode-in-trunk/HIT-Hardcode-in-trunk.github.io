@@ -11,6 +11,8 @@ const quizdata = [
         playerId: "kaltura_player_1628782791",
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
+        answerVideoOptions: ["videoOption_X","videoOption_Y","videoOption_Z"],
+        answerVidoePlayerIds: ["kaltura_player_XXXXXXXX","kaltura_player_YYYYYYYY","kaltura_player_ZZZZZZZZ"],
         category: 1,
         optionScores :[0,50,10]
     },
