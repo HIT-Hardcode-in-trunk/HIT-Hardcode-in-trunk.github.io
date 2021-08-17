@@ -21,8 +21,8 @@ const quizdata = [
         playerId: "kaltura_player_1628782914",
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
-        // answerVideoOptions: ["videoOption_0", "videoOption_1", "videoOption_2"],
-        // answersVideoPlayerIds: ["kaltura_player_1628782791", "kaltura_player_1628782914", "kaltura_player_1628782968"],
+        answerVideoOptions: ["videoOption_0", "videoOption_1", "videoOption_2"],
+        answersVideoPlayerIds: ["kaltura_player_1628782791", "kaltura_player_1628782914", "kaltura_player_1628782968"],
         category: 2,
         optionScores: [0, 50, 10]
     },
