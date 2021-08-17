@@ -30,7 +30,7 @@ playerId: "kaltura_player_1628782914",
     },
     {
         question:
-            "Very Important Question",
+            "Question 3",
         
         videoOption: "videoOption_2",
 playerId: "kaltura_player_1628782968",
@@ -42,7 +42,7 @@ playerId: "kaltura_player_1628782968",
 
     {
         question:
-            "Question 3",
+            "Question 4",
         
         videoOption: "videoOption_3",
 playerId: "kaltura_player_1628782968",
