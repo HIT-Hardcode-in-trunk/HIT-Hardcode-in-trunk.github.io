@@ -16,6 +16,7 @@ const quizdata = [
         category: 1,
         optionScores :[0,50,10]
     },
+    
     {
         question:
             "Second Question",
