@@ -6,8 +6,9 @@ var video1 = document.getElementsByClassName ('.video1');
 const quizdata = [
     {
         question: "Why have you applied for the job?",
+        
         videoOption: "videoOption_0",
-        playerId: "kaltura_player_1628782968",
+        playerId: "kaltura_player_1628782791",
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
@@ -18,11 +19,9 @@ const quizdata = [
             "Second Question",
         
         videoOption: "videoOption_1",
-        playerId: ["kaltura_player_1628782914","kaltura_player_1628782968"],
+playerId: "kaltura_player_1628782914",
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
-        // answerVideoOptions: ["videoOption_0", "videoOption_1", "videoOption_2"],
-        // answersVideoPlayerIds: ["kaltura_player_1628782791", "kaltura_player_1628782914", "kaltura_player_1628782968"],
         category: 2,
         optionScores: [0, 50, 10]
     },
@@ -30,7 +29,7 @@ const quizdata = [
         question:
             "Very Important Question",
         
-        videoOption: "videoOption_3",
+        videoOption: "videoOption_2",
 playerId: "kaltura_player_1628782968",
         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         answer: ["Very Important Option 2"],
@@ -401,6 +400,7 @@ $(document).ready(function () {
     $(".videoOptions > div").addClass("hidden");
 
     var presentIndex = 0;
+    
     var clicked = 0;
     //var clickedIdx = 0;
     var clickedScore = 0;
@@ -436,7 +436,7 @@ $("#" + questions[presentIndex].videoOption).removeClass("hidden");
         addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
 
         $(this).addClass("hidden");
-        $(".videoOptions > div").addClass("#");
+        $(".videoOptions > div").addClass("hidden");
         var kdp = document.getElementById(questions[presentIndex].playerId);
         kdp.sendNotification("doStop");
         presentIndex++;
