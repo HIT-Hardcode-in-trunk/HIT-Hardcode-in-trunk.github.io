@@ -4,15 +4,15 @@ var scoreList = [];
 var video1 = document.getElementsByClassName ('.video1');
 
 const quizdata = [
-    // {
-    //     question: "Why have you applied for the job?",
-    //     videoOption: "videoOption_2",
-    //     playerId: "kaltura_player_1628782968",
-    //     options: ["Answer A", "Answer B:", "Answer C:"],
-    //     answer: ["Answer B:"],
-    //     category: 1,
-    //     optionScores :[0,50,10]
-    // },
+    {
+        question: "Why have you applied for the job?",
+        videoOption: "videoOption_2",
+        playerId: "kaltura_player_1628782968",
+        options: ["Answer A", "Answer B:", "Answer C:"],
+        answer: ["Answer B:"],
+        category: 1,
+        optionScores :[0,50,10]
+    },
     {
         question:
             "Second Question",
@@ -26,17 +26,17 @@ const quizdata = [
         category: 2,
         optionScores: [0, 50, 10]
     },
-//     {
-//         question:
-//             "Very Important Question",
+    {
+        question:
+            "Very Important Question",
         
-//         videoOption: "videoOption_2",
-// playerId: "kaltura_player_1628782968",
-//         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
-//         answer: ["Very Important Option 2"],
-//         category: 2,
-//         optionScores: [0, 90, 10]
-//     }
+        videoOption: "videoOption_2",
+playerId: "kaltura_player_1628782968",
+        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
+        answer: ["Very Important Option 2"],
+        category: 2,
+        optionScores: [0, 90, 10]
+    }
  
 ];
 /** Random shuffle questions **/
@@ -398,7 +398,7 @@ function addClickedAnswerToResult(questions, presentIndex, clicked,scoreClicked,
 }
 
 $(document).ready(function () {
-    $(".videoOptions > div").addClass("#");
+    $(".videoOptions > div").addClass("hidden");
 
     var presentIndex = 0;
     var clicked = 0;
