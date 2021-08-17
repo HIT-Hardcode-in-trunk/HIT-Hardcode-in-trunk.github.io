@@ -6,7 +6,7 @@ var video1 = document.getElementsByClassName ('.video1');
 const quizdata = [
     {
         question: "Why have you applied for the job?",
-        videoOption: "videoOption_2",
+        videoOption: "videoOption_0",
         playerId: "kaltura_player_1628782968",
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
@@ -21,8 +21,8 @@ const quizdata = [
         playerId: "kaltura_player_1628782914",
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
-        answerVideoOptions: ["videoOption_0", "videoOption_1", "videoOption_2"],
-        answersVideoPlayerIds: ["kaltura_player_1628782791", "kaltura_player_1628782914", "kaltura_player_1628782968"],
+        // answerVideoOptions: ["videoOption_0", "videoOption_1", "videoOption_2"],
+        // answersVideoPlayerIds: ["kaltura_player_1628782791", "kaltura_player_1628782914", "kaltura_player_1628782968"],
         category: 2,
         optionScores: [0, 50, 10]
     },
@@ -30,7 +30,7 @@ const quizdata = [
         question:
             "Very Important Question",
         
-        videoOption: "videoOption_2",
+        videoOption: "videoOption_3",
 playerId: "kaltura_player_1628782968",
         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         answer: ["Very Important Option 2"],
