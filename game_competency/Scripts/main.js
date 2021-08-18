@@ -27,8 +27,8 @@ const quizdata = [
         question:
             "3 Video in row",
         
-        videoOption: "videoOption_2",
-playerId: "kaltura_player_1628782968",
+        videoOption: ["videoOption_0, videoOption_1, videoOption_2"],
+        playerId: "kaltura_player_1628782968",
         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         answer: ["Very Important Option 2"],
         category: 2,
