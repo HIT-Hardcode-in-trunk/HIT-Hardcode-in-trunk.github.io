@@ -5,7 +5,7 @@ var video1 = document.getElementsByClassName ('.video1');
 
 const quizdata = [
     {
-        question: "Why have you applied for the job?",
+        question: "Can you tell me about a time when you successfully completed a task as part of a team?",
         videoOption: "videoOption_0",
         playerId: "kaltura_player_1628782791",
         options: ["Answer A", "Answer B:", "Answer C:"],
@@ -15,7 +15,7 @@ const quizdata = [
     },
 
     {
-        question: "Second Question",
+        question: "Describe a situation where you delivered good customer service",
         videoOption: "videoOption_1",
         playerId: "kaltura_player_1628782914",
         options: ["Option 1", "Option 2", "Option 3"],
@@ -24,8 +24,7 @@ const quizdata = [
         optionScores: [0, 50, 10]
     },
     {
-        question:
-            "3 Video in row",
+        question: "Tell me about a time when you’ve had to complete a project or task to a tight deadline",
         
         videoOption: ["videoOption_0, videoOption_1, videoOption_2"],
         playerId: "kaltura_player_1628782968",
@@ -35,6 +34,17 @@ const quizdata = [
         optionScores: [0, 90, 10]
     },
 
+
+    {
+        question: "Tell me about a time when you used your written or verbal communication skills effectively.",
+        
+        videoOption: ["videoOption_0, videoOption_1, videoOption_2"],
+        playerId: "kaltura_player_1628782968",
+        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
+        answer: ["Very Important Option 2"],
+        category: 2,
+        optionScores: [0, 90, 10]
+    }
  
 ];
 /** Random shuffle questions **/
