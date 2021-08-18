@@ -25,7 +25,7 @@ const quizdata = [
     },
     {
         question:
-            "Question 3",
+            "3 Video in row",
         
         videoOption: "videoOption_2",
 playerId: "kaltura_player_1628782968",
