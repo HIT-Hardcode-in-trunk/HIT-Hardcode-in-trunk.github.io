@@ -35,17 +35,6 @@ playerId: "kaltura_player_1628782968",
         optionScores: [0, 90, 10]
     },
 
-    {
-        question:
-            "Question 4",
-        
-        videoOption: "videoOption_3",
-playerId: "kaltura_player_1628782968",
-        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
-        answer: ["Very Important Option 2"],
-        category: 2,
-        optionScores: [0, 90, 10]
-    }
  
 ];
 /** Random shuffle questions **/
