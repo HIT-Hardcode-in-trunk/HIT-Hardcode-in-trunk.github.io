@@ -44,6 +44,17 @@ const quizdata = [
         answer: ["Very Important Option 2"],
         category: 2,
         optionScores: [0, 90, 10]
+    },
+
+    {
+        question: "Tell me about a time when you used your written or verbal communication skills effectively.",
+        
+        videoOption: ["videoOption_0, videoOption_1, videoOption_2"],
+        playerId: "kaltura_player_1628782968",
+        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
+        answer: ["Very Important Option 2"],
+        category: 2,
+        optionScores: [0, 90, 10]
     }
  
 ];
