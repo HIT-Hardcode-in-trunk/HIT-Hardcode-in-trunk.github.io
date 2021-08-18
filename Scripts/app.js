@@ -42,7 +42,3 @@ tl.from(".anim1", { y: -50, stagger: .6, opacity: 0 })
     .from("#women", { y: -50, opacity: 0 }, "-=.5")
     .from("#men", { y: 50, opacity: 0 }, "-=.5");
 
-// 7 Show Click reverse
-document.getElementById('about-btn').addEventListener('click', () => {
-    tl.reversed() ? tl.play() : tl.reverse();
-})
