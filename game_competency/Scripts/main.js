@@ -18,8 +18,8 @@ const quizdata = [
         question: "Describe a situation where you delivered good customer service",
         videoOption: "videoOption_1",
         playerId: "kaltura_player_1628782914",
-        options: ["Option 1", "Option 2", "Option 3"],
-        answer: ["Option 2"],
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer A"],
         category: 2,
         optionScores: [0, 50, 10]
     },
@@ -28,8 +28,8 @@ const quizdata = [
         
         videoOption: ["videoOption_0, videoOption_1, videoOption_2"],
         playerId: "kaltura_player_1628782968",
-        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
-        answer: ["Very Important Option 2"],
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer A"],
         category: 2,
         optionScores: [0, 90, 10]
     },
@@ -40,8 +40,8 @@ const quizdata = [
         
         videoOption: ["videoOption_0, videoOption_1, videoOption_2"],
         playerId: "kaltura_player_1628782968",
-        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
-        answer: ["Very Important Option 2"],
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer C"],
         category: 2,
         optionScores: [0, 90, 10]
     },
@@ -51,8 +51,8 @@ const quizdata = [
         
         videoOption: ["videoOption_0, videoOption_1, videoOption_2"],
         playerId: "kaltura_player_1628782968",
-        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
-        answer: ["Very Important Option 2"],
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer A"],
         category: 2,
         optionScores: [0, 90, 10]
     }
