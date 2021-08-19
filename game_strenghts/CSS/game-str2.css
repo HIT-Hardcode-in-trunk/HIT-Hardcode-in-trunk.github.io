@@ -198,7 +198,7 @@ Main .activities .activities-wrapper .card-content .cta-btn {
   padding: 0.8em 2em;
   background: #ee3b40;
   -webkit-transform: translateY(30px);
-  transform: translateY(30px);
+          transform: translateY(30px);
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -210,7 +210,7 @@ Main .activities .activities-wrapper .card-content .cta-btn {
 Main .activities .activities-wrapper .card-content .cta-btn:hover {
   background-color: #6165d7;
   -webkit-box-shadow: 0px 15px 20px rgba(128, 0, 0, 0.2);
-  box-shadow: 0px 15px 20px rgba(128, 0, 0, 0.2);
+          box-shadow: 0px 15px 20px rgba(128, 0, 0, 0.2);
   color: #fff;
 }
 
@@ -311,4 +311,4 @@ Main .activities .footer .logo-planit img {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=game-str3.css.map */
+/*# sourceMappingURL=game-str2.css.map */
