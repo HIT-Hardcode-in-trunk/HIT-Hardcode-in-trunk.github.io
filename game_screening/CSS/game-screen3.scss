@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+// Typography colour
 $background-violet: #4c4981;
 $text-violet: #4c4981;
 $text-white: white;
@@ -165,25 +166,15 @@ img {
 
 Main .activities {
   width: 100%;
-  background: white;
+  background: url("../Images/advert2.png");
   background-size: cover;
-  display: flex;
-  margin: 0 auto;
-}
-.svg {
-  width: 35%;
-  margin-left: 8em;
 }
 
-ul.duties-list {
-  padding: 1rem 0rem 1rem 2rem;
-}
-.logo-north_east {
-  width: 6%;
-  margin-right: 0.4rem;
+ul.following-list {
+  padding: 1rem 4rem 1rem 2rem;
 }
 
-.duties-list li {
+.following-list li {
   list-style: disc;
   font-size: 1.2rem;
   font-family: "Lato";
@@ -191,7 +182,6 @@ ul.duties-list {
 
 Main .activities .activities-wrapper {
   min-height: 65vh;
-  position: relative;
   display: -ms-grid;
   display: grid;
   place-items: end center;
@@ -231,16 +221,15 @@ Main .activities .card-info h3 {
   color: black;
 }
 
-main .activities .card-info p {
+Main .activities .card-info p {
   line-height: 1.2rem;
   font-family: "Lato", sans-serif;
   font-weight: lighter;
-  padding: 2em;
   font-size: 0.6rem;
   color: black;
 }
 
-main .activities .footer {
+Main .activities .footer {
   width: 100%;
   text-align: end;
 }
@@ -279,11 +268,18 @@ Main .activities .footer .logo-planit img {
   main .activities .card-info {
     min-height: 80vh;
     max-width: 90ch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   main .activities .card-info h3 {
     font-size: 2.2rem;
-    padding: 2rem 0rem 1rem 0rem;
-    color: #2daae1;
+    padding: 3rem 0rem 1rem 0rem;
+    color: #e6007f;
   }
   main .activities .card-info p {
     font-size: 1.2rem;
