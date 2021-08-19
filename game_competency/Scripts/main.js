@@ -27,7 +27,7 @@ const quizdata = [
         question: "Tell me about a time when you’ve had to complete a project or task to a tight deadline",
         
         videoOption: "videoOption_2",
-        playerId: "kaltura_player_1628782968",
+        // playerId: "kaltura_player_1628782968",
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer A"],
         category: 2,
