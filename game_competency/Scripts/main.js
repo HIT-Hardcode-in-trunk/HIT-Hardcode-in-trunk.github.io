@@ -26,7 +26,7 @@ const quizdata = [
     {
         question: "Tell me about a time when you’ve had to complete a project or task to a tight deadline",
         
-        videoOption: ["videoOption_0, videoOption_1, videoOption_2"],
+        videoOption: "videoOption_2",
         playerId: "kaltura_player_1628782968",
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer A"],
@@ -38,7 +38,7 @@ const quizdata = [
     {
         question: "Tell me about a time when you used your written or verbal communication skills effectively.",
         
-        videoOption: ["videoOption_0, videoOption_1, videoOption_2"],
+        videoOption: "videoOption_3",
         playerId: "kaltura_player_1628782968",
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer C"],
@@ -49,7 +49,7 @@ const quizdata = [
     {
         question: "Tell me about a time when you used your written or verbal communication skills effectively.",
         
-        videoOption: ["videoOption_0, videoOption_1, videoOption_2"],
+        videoOption: "videoOption_4",
         playerId: "kaltura_player_1628782968",
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer A"],
