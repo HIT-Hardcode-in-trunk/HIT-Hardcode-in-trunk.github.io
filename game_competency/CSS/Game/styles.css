@@ -57,6 +57,7 @@ body {
 .videoRow {
   display: flex;
   justify-content: space-around;
+  margin: 1em;
   width: 100%;
 }
 
