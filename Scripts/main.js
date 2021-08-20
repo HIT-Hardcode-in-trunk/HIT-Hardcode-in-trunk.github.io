@@ -18,7 +18,9 @@ const quizdata = [
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
-        optionScores :[0, 50, 10]
+        optionScores :[0,50,10],
+        KplayerIds: ["kaltura_player_1628690985","kaltura_player_1628693936","kaltura_player_1628691144"],
+
     },
     {
         question:
@@ -27,16 +29,18 @@ const quizdata = [
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
         category: 2,
-        optionScores: [0, 50, 10]
+        optionScores: [0, 50, 10],
+        KplayerIds: []
     },
     {
         question:
             "Very Important Question",
-        video: "videoOption_2",
+        video: "videoOption_3",
         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         answer: ["Very Important Option 2"],
         category: 2,
-        optionScores: [0, 90, 10]
+        optionScores: [0, 90, 10],
+        KplayerIds: []
     }
  
 ];
@@ -397,7 +401,17 @@ function addClickedAnswerToResult(questions, presentIndex, clicked,scoreClicked,
     console.log("result");
     console.log(result);
 }
-
+function sendStopToKplayers(playerIds)
+{
+    if(playerIds.length>0)
+    {
+    for (i = 0; i < playerIds.length; i++)
+     {
+        var kPlayer = document.getElementById (playerIds[i]);
+        kPlayer.sendNotification("doStop");       
+    }
+}
+}
 $(document).ready(function () {
     $(".videoOptions > div").addClass("hidden");
 
@@ -436,6 +450,8 @@ $(document).ready(function () {
         e.preventDefault();
         addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
 
+        sendStopToKplayers(questions[presentIndex].KplayerIds)
+
         $(this).addClass("hidden");
         $(".videoOptions > div").addClass("hidden");
         presentIndex++;
@@ -445,6 +461,7 @@ $(document).ready(function () {
     });
 
     $("#submit").on("click", function (e) {
+        sendStopToKplayers(questions[presentIndex].KplayerIds)
         addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
         $(".multipleChoiceQues").hide();
         $(".resultArea").show();
