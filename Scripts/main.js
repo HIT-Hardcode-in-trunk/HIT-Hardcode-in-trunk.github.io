@@ -30,7 +30,9 @@ const quizdata = [
         optionScores: [0, 50, 10]
     },
     {
-        question:"Very Important Question",
+        question:
+            "Very Important Question",
+        video: "videoOption_3",
         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         answer: ["Very Important Option 2"],
         category: 2,
