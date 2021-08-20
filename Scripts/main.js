@@ -18,7 +18,7 @@ const quizdata = [
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
-        optionScores :[0,50,10]
+        optionScores :[0, 50, 10]
     },
     {
         question:
