@@ -1,58 +1,40 @@
 var $progressValue = 0;
 var resultList = [];
 var scoreList = [];
-var video1 = document.getElementsByClassName ('.video1');
+var video = document.getElementById('video1');
+var next = document.getElementById('next');
+  
+
+next.addEventListener('click',function(){
+  video.load();
+  video.stop();
+  },false);
+
 
 const quizdata = [
     {
-        question: "Can you tell me about a time when you successfully completed a task as part of a team?",
-        videoOption: "videoOption_0",
-        // playerId: "kaltura_player_1628782791",
+        question:"Why have you applied for the job?",
+        video: "videoOption_0",
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
         optionScores :[0,50,10]
     },
-
     {
-        question: "Describe a situation where you delivered good customer service",
-        videoOption: "videoOption_1",
-        // playerId: "kaltura_player_1628782914",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer A"],
+        question:
+            "Second Question and",
+        video:  "videoOption_1",
+        options: ["Option 1", "Option 2", "Option 3"],
+        answer: ["Option 2"],
         category: 2,
         optionScores: [0, 50, 10]
     },
     {
-        question: "Tell me about a time when you’ve had to complete a project or task to a tight deadline",
-        
-        // videoOption: "videoOption_2",
-        // playerId: "kaltura_player_1628782968",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer A"],
-        category: 2,
-        optionScores: [0, 90, 10]
-    },
-
-
-    {
-        question: "Tell me about a time when you used your written or verbal communication skills effectively.",
-        
-        videoOption: "videoOption_3",
-        playerId: "kaltura_player_1628782968",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer C"],
-        category: 2,
-        optionScores: [0, 90, 10]
-    },
-
-    {
-        question: "Tell me about a time when you used your written or verbal communication skills effectively.",
-        
-        videoOption: "videoOption_4",
-        playerId: "kaltura_player_1628782968",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer A"],
+        question:
+            "Very Important Question",
+        video: "videoOption_3",
+        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
+        answer: ["Very Important Option 2"],
         category: 2,
         optionScores: [0, 90, 10]
     }
@@ -158,7 +140,7 @@ function genResultArray(results, wrong, scoreTotal, scoreMaxPossTotal) {
 
 //// direct percentage //////////
 function directPercent(number, total) {
-    if(total==0) return -1//bad parameter error
+    if(number==0 && total==0) return -1//bad parameter error
     if (number == 0) return 0
     else return 100*((number / total).toFixed(2));
 }
@@ -420,13 +402,12 @@ $(document).ready(function () {
     $(".videoOptions > div").addClass("hidden");
 
     var presentIndex = 0;
-    
+    $("#videoOption_" + presentIndex).removeClass("hidden");
     var clicked = 0;
     //var clickedIdx = 0;
     var clickedScore = 0;
     var maxPossScore = 0;
     var questions = generateQuestions();
-$("#" + questions[presentIndex].videoOption).removeClass("hidden");
     renderQuiz(questions, presentIndex);
     getProgressindicator(questions.length);
 
@@ -457,18 +438,14 @@ $("#" + questions[presentIndex].videoOption).removeClass("hidden");
 
         $(this).addClass("hidden");
         $(".videoOptions > div").addClass("hidden");
-        var kdp = document.getElementById(questions[presentIndex].playerId);
-        kdp.sendNotification("doStop");
         presentIndex++;
-        $("#" + questions[presentIndex].videoOption).removeClass("hidden");
+        $("#videoOption_" + presentIndex).removeClass("hidden");
         renderQuiz(questions, presentIndex);
         changeProgressValue();
     });
 
     $("#submit").on("click", function (e) {
-        addClickedAnswerToResult(questions, presentIndex, clicked, clickedScore, maxPossScore);
-        var kdp = document.getElementById(questions[presentIndex].playerId);
-        kdp.sendNotification("doStop");
+        addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
         $(".multipleChoiceQues").hide();
         $(".resultArea").show();
         renderResult(resultList);
