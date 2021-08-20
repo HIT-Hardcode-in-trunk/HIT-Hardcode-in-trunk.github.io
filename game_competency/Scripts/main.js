@@ -16,7 +16,7 @@ const quizdata = [
         question:"Can you tell me about a time when you successfully completed a task as part of a team?",
         video: "videoOption_0",
         options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer B", "Answer A", "Answer C"],
+        answer: ["Answer A", "Answer B", "Answer C"],
         category: 1,
         optionScores :[0, 50, 10]
     },
