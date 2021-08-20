@@ -22,7 +22,7 @@ const quizdata = [
     },
     {
         question:
-            "Second Question",
+            "Second Question and",
         video:  "videoOption_1",
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 2"],
