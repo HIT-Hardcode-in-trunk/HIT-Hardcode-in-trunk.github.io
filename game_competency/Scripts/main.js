@@ -7,7 +7,7 @@ const quizdata = [
     {
         question: "Can you tell me about a time when you successfully completed a task as part of a team?",
         videoOption: "videoOption_0",
-        playerId: "kaltura_player_1628782791",
+        // playerId: "kaltura_player_1628782791",
         options: ["Answer A", "Answer B:", "Answer C:"],
         answer: ["Answer B:"],
         category: 1,
@@ -17,7 +17,7 @@ const quizdata = [
     {
         question: "Describe a situation where you delivered good customer service",
         videoOption: "videoOption_1",
-        playerId: "kaltura_player_1628782914",
+        // playerId: "kaltura_player_1628782914",
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer A"],
         category: 2,
@@ -35,7 +35,27 @@ const quizdata = [
     },
 
 
-   
+    // {
+    //     question: "Tell me about a time when you used your written or verbal communication skills effectively.",
+        
+    //     videoOption: "videoOption_3",
+    //     playerId: "kaltura_player_1628782968",
+    //     options: ["Answer A", "Answer B", "Answer C"],
+    //     answer: ["Answer C"],
+    //     category: 2,
+    //     optionScores: [0, 90, 10]
+    // },
+
+    // {
+    //     question: "Tell me about a time when you used your written or verbal communication skills effectively.",
+        
+    //     videoOption: "videoOption_4",
+    //     playerId: "kaltura_player_1628782968",
+    //     options: ["Answer A", "Answer B", "Answer C"],
+    //     answer: ["Answer A"],
+    //     category: 2,
+    //     optionScores: [0, 90, 10]
+    // }
  
 ];
 /** Random shuffle questions **/
