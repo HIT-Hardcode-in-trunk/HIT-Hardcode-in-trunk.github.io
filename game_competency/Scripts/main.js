@@ -20,40 +20,40 @@ const quizdata = [
         category: 1,
         optionScores :[0, 50, 10]
     },
-    {
-        question:"Describe a situation where you delivered good customer service.",
-        video:  "videoOption_1",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer B"],
-        category: 2,
-        optionScores: [0, 50, 10]
-    },
-    {
-        question:"Tell me about a time when you’ve had to complete a project or task to a tight deadline.",
-        video: "videoOption_3",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer C"],
-        category: 2,
-        optionScores: [0, 90, 10]
-    },
+    // {
+    //     question:"Describe a situation where you delivered good customer service.",
+    //     video:  "videoOption_1",
+    //     options: ["Answer A", "Answer B", "Answer C"],
+    //     answer: ["Answer B"],
+    //     category: 2,
+    //     optionScores: [0, 50, 10]
+    // },
+    // {
+    //     question:"Tell me about a time when you’ve had to complete a project or task to a tight deadline.",
+    //     video: "videoOption_3",
+    //     options: ["Answer A", "Answer B", "Answer C"],
+    //     answer: ["Answer C"],
+    //     category: 2,
+    //     optionScores: [0, 90, 10]
+    // },
  
-    {
-        question:"Tell me about a time when you used your written or verbal communication skills effectively.",
-        video: "videoOption_4",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer A"],
-        category: 2,
-        optionScores: [0, 90, 10]
-    },
+    // {
+    //     question:"Tell me about a time when you used your written or verbal communication skills effectively.",
+    //     video: "videoOption_4",
+    //     options: ["Answer A", "Answer B", "Answer C"],
+    //     answer: ["Answer A"],
+    //     category: 2,
+    //     optionScores: [0, 90, 10]
+    // },
 
-    {
-        question:"Describe a situation where you used your organisation skills effectively?",
-        video: "videoOption_5",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer B"],
-        category: 2,
-        optionScores: [0, 90, 10]
-    }
+    // {
+    //     question:"Describe a situation where you used your organisation skills effectively?",
+    //     video: "videoOption_5",
+    //     options: ["Answer A", "Answer B", "Answer C"],
+    //     answer: ["Answer B"],
+    //     category: 2,
+    //     optionScores: [0, 90, 10]
+    // }
 
 ];
 /** Random shuffle questions **/
