@@ -35,27 +35,7 @@ const quizdata = [
     },
 
 
-    {
-        question: "Tell me about a time when you used your written or verbal communication skills effectively.",
-        
-        videoOption: "videoOption_3",
-        playerId: "kaltura_player_1628782968",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer C"],
-        category: 2,
-        optionScores: [0, 90, 10]
-    },
-
-    {
-        question: "Tell me about a time when you used your written or verbal communication skills effectively.",
-        
-        videoOption: "videoOption_4",
-        playerId: "kaltura_player_1628782968",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer A"],
-        category: 2,
-        optionScores: [0, 90, 10]
-    }
+   
  
 ];
 /** Random shuffle questions **/
