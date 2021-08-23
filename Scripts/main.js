@@ -62,7 +62,7 @@ const quizdata = [
         category: 2,
         optionScores: [0, 90, 10],
         KplayerIds: []
-    }
+    },
 
 
     {
