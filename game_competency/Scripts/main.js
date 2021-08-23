@@ -153,7 +153,7 @@ function renderQuiz(questions, index) {
 
 /** Return correct answer of a question ***/
 function getCorrectAnswer(questions, index) {
-    return questions[index].answer + questions[index].answerDescription;
+    return "this is your answer:" + questions[index].answer + questions[index].answerDescription;
 }
 
 /** pushanswers in array **/
