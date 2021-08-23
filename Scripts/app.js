@@ -11,7 +11,7 @@ function navToggle(e) {
         gsap.to("#logo", 1, { color: "white" });
         gsap.to("#logo", 1, { textShadow: "0px 5px 20px #EE82EE" });
         gsap.to(".burger-circle", 1, { boxShadow: "0px 0px 20px 0px violet" });
-        gsap.to(".nav-bar-desktop", 1.5, { clipPath: "circle(2500px at 100% -10%)" });
+        gsap.to(".nav-bar", 1.5, { clipPath: "circle(2500px at 100% -10%)" });
         document.body.classList.add("hide");
     } else {
         e.target.classList.remove("active");
@@ -20,7 +20,7 @@ function navToggle(e) {
         gsap.to("#logo", 1, { color: "white" });
         gsap.to("#logo", 1, { textShadow: "0px 0px 0px #EE82EE" });
         gsap.to(".burger-circle", 1, { boxShadow: "0px 0px 0px 0px black" });
-        gsap.to(".nav-bar-desktop", 1, { clipPath: "circle(50px at 100% -10%)" });
+        gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
         document.body.classList.remove("hide");
     }
 }
@@ -31,5 +31,14 @@ burger.addEventListener('click', navToggle);
 
 
 
+var rule = CSSRulePlugin.getRule("span:after");
 
+// 6 Show Timeline
+var tl = gsap.timeline({ defaults: { duration: 1 } })
+tl.from(".anim1", { y: -50, stagger: .6, opacity: 0 })
+    .to(rule, { duration: 1.8, cssRule: { scaleY: 0 } }, "-=2.2")
+    .from("aside", { backgroundPosition: '200px 0px', opacity: 0 }, "-=1.5")
+    // .from("svg", { x: 100, opacity: 0 }, "-=.5")
+    .from("#women", { y: -50, opacity: 0 }, "-=.5")
+    .from("#men", { y: 50, opacity: 0 }, "-=.5");
 
