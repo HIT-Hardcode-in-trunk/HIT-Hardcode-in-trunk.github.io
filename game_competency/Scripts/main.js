@@ -19,7 +19,7 @@ const quizdata = [
         answer: "Answer A",
         answerDescription: [
             
-            "Answer A: This is the best answer as it follows the STARR method and demonstrates well the candidate’s ability to work in a team. It also covers many of the skills that the employer is looking for." + "<br\></br>",
+            "Answer A: This is the best answer as it follows the STARR method and demonstrates well the candidate’s ability to work in a team. It also covers many of the skills that the employer is looking for." + "<br></br>",
             "Answer B: This is the poorest answer as it isn’t full enough – it doesn’t give a detailed description and doesn’t follow the STARR method.", 
             "Answer C: This is a fairly good answer as it follows the STARR method, but the candidate should have concentrated more on describing specifically what they did, rather than the team as a whole."
         
@@ -153,7 +153,7 @@ function renderQuiz(questions, index) {
 
 /** Return correct answer of a question ***/
 function getCorrectAnswer(questions, index) {
-    return "this is your answer:" + questions[index].answer + questions[index].answerDescription;
+    return "this is your answer: " + questions[index].answer +"<br></br>" + questions[index].answerDescription;
 }
 
 /** pushanswers in array **/
