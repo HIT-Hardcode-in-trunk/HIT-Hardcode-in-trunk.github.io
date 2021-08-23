@@ -238,7 +238,7 @@ div img:hover {
   width: 20%;
 }
 
-@media screen and (min-device-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .nav-bar-desktop {
     display: none;
   }
