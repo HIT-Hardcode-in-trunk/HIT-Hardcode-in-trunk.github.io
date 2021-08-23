@@ -18,7 +18,7 @@ const quizdata = [
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer B"],
         category: 1,
-        optionScores :[0,50,10],
+        optionScores :[30,50,20],
         KplayerIds: ["kaltura_player_1628690985","kaltura_player_1628693936","kaltura_player_1628691144"],
 
     },
