@@ -18,7 +18,7 @@ const quizdata = [
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer A", "Answer B", "Answer C"],
         category: 1,
-        optionScores :[20,30,50]
+        optionScores :[20,30,100]
     },
     {
         question:
@@ -27,7 +27,7 @@ const quizdata = [
         options: ["Option 1", "Option 2", "Option 3"],
         answer: ["Option 1", "Option 2", "Option 3"],
         category: 2,
-        optionScores: [20, 30, 50]
+        optionScores: [20, 30, 100]
     },
     {
         question:
@@ -36,7 +36,7 @@ const quizdata = [
         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         answer: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         category: 2,
-        optionScores: [20, 30, 50]
+        optionScores: [20, 30, 100]
     }
  
 ];
