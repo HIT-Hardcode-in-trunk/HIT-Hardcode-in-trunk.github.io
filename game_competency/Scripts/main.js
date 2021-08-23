@@ -349,7 +349,7 @@ function getAllAnswer(results) {
             '<div class="_yourscore ' +
             _classH +
             '">' +
-            // questionScore + " / "+questionMaxPossScore +" Q("+questionPercent+"%) Qtotal("+questionPercentofTotalMaxPossScore+"%) Total("+totalScorePercent+"%)"+
+            questionScore + " / "+questionMaxPossScore +" Q("+questionPercent+"%) Qtotal("+questionPercentofTotalMaxPossScore+"%) Total("+totalScorePercent+"%)"+
             "</div>";
 
         var html = "";
