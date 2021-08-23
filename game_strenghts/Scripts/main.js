@@ -15,8 +15,8 @@ const quizdata = [
     {
         question:"Why have you applied for the job?",
         video: "videoOption_0",
-        options: ["Answer A", "Answer B:", "Answer C:"],
-        answer: ["Answer B:"],
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer A", "Answer B", "Answer C"],
         category: 1,
         optionScores :[0,50,10]
     },
@@ -25,7 +25,7 @@ const quizdata = [
             "Second Question and",
         video:  "videoOption_1",
         options: ["Option 1", "Option 2", "Option 3"],
-        answer: ["Option 2"],
+        answer: ["Option 1", "Option 2", "Option 3"],
         category: 2,
         optionScores: [0, 50, 10]
     },
@@ -34,9 +34,9 @@ const quizdata = [
             "Very Important Question",
         video: "videoOption_3",
         options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
-        answer: ["Very Important Option 2"],
+        answer: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
         category: 2,
-        optionScores: [0, 90, 10]
+        optionScores: [0, 50, 10]
     }
  
 ];
