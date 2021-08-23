@@ -34,7 +34,7 @@ const quizdata = [
     {
         question:
             "What do you know about our company?",
-        video: "videoOption_3",
+        video: "videoOption_2",
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer B"],
         category: 2,
@@ -56,12 +56,25 @@ const quizdata = [
     {
         question:
             "What is your biggest weakness?",
-        video: "videoOption_3",
+        video: "videoOption_",
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer B"],
         category: 2,
         optionScores: [0, 90, 10],
         KplayerIds: []
+    }
+
+
+    {
+        question:"Would you like to ask any questions?",
+        video: "videoOption_6",
+        options: [
+            "Question A: I don’t have any questions as I think you have covered everything during the interview.", 
+            "Question B: Can you give me a bit more information about the team that I would be working with?", 
+            "Question C: What are the next steps in the process?"],
+        answer: ["Answer B"],
+        category: 2,
+        optionScores: [0, 90, 10]
     }
  
 ];
