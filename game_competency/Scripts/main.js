@@ -26,7 +26,7 @@ const quizdata = [
         ],
         category: 1,
         optionScores :[0, 50, 10]
-    },
+    }
     // {
     //     question:"Describe a situation where you delivered good customer service.",
     //     video:  "videoOption_1",
