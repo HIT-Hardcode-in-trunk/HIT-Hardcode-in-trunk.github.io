@@ -142,7 +142,7 @@ function genResultArray(results, wrong, scoreTotal, scoreMaxPossTotal) {
 function directPercent(number, total) {
     if(number==0 && total==0) return -1//bad parameter error
     if (number == 0) return 0
-    else return 100*((number / total).toFixed(2));
+    else return 10*((number / total).toFixed(2));
 }
 
 /** percentage Calculation **/
