@@ -137,7 +137,6 @@ main {
   -webkit-clip-path: circle(50px at 100% -10%);
 }
 
-
 .nav-bar-desktop {
   position: absolute;
   top: 0;
@@ -234,7 +233,9 @@ div img:hover {
 }
 
 @media screen and (min-device-width: 1000px) {
-  .nav-bar-
+  .nav-bar-mobile {
+    display: none;
+  }
 }
 @media (orientation: landscape) {
   .activities {
