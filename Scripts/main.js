@@ -26,9 +26,9 @@ const quizdata = [
         question: "What skills and personal qualities make you suitable for the job?",
         video:  "videoOption_1",
         options: ["Answer A", "Option B", "Answer C"],
-        answer: ["Answer C"],
+        answer: ["Answer A", "Answer B", "Answer C"],
         category: 2,
-        optionScores: [0, 50, 10],
+        optionScores: [30, 50, 20],
         KplayerIds: []
     },
     {
@@ -36,9 +36,9 @@ const quizdata = [
             "What do you know about our company?",
         video: "videoOption_2",
         options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer B"],
+        answer: ["Answer A", "Answer B", "Answer C"],
         category: 2,
-        optionScores: [0, 90, 10],
+        optionScores: [30, 50, 20],
         KplayerIds: []
     },
 
@@ -47,9 +47,9 @@ const quizdata = [
             "What are your main strengths?",
         video: "videoOption_3",
         options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer B"],
+        answer: ["Answer A", "Answer B", "Answer C"],
         category: 2,
-        optionScores: [0, 90, 10],
+        optionScores: [30, 50, 20],
         KplayerIds: []
     },
 
@@ -58,7 +58,7 @@ const quizdata = [
             "What is your biggest weakness?",
         video: "videoOption_",
         options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer B"],
+        answer: ["Answer A", "Answer B", "Answer C"],
         category: 2,
         optionScores: [0, 90, 10],
         KplayerIds: []
