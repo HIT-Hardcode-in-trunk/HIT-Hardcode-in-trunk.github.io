@@ -16,7 +16,7 @@ const quizdata = [
         question:"Can you tell me about a time when you successfully completed a task as part of a team?",
         video: "videoOption_0",
         options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer A"],
+        answer: ["Answer A: This is the best answer as it follows the STARR method and demonstrates well the candidate’s ability to work in a team. It also covers many of the skills that the employer is looking for. "],
         category: 1,
         optionScores :[0, 50, 10]
     },
