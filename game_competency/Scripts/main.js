@@ -24,7 +24,7 @@ const quizdata = [
         
         ],
 
-        answer: "Answer B",
+        answer: "Answer A",
         category: 1,
         optionScores :[0, 50, 10]
     }
