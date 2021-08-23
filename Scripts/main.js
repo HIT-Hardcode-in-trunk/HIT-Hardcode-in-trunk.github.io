@@ -15,29 +15,50 @@ const quizdata = [
     {
         question:"Why have you applied for the job?",
         video: "videoOption_0",
-        options: ["Answer A", "Answer B:", "Answer C:"],
-        answer: ["Answer B:"],
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
         category: 1,
         optionScores :[0,50,10],
         KplayerIds: ["kaltura_player_1628690985","kaltura_player_1628693936","kaltura_player_1628691144"],
 
     },
     {
-        question:
-            "Second Question and",
+        question: "What skills and personal qualities make you suitable for the job?",
         video:  "videoOption_1",
-        options: ["Option 1", "Option 2", "Option 3"],
-        answer: ["Option 2"],
+        options: ["Answer A", "Option B", "Answer C"],
+        answer: ["Answer C"],
         category: 2,
         optionScores: [0, 50, 10],
         KplayerIds: []
     },
     {
         question:
-            "Very Important Question",
+            "What do you know about our company?",
         video: "videoOption_3",
-        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
-        answer: ["Very Important Option 2"],
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
+        category: 2,
+        optionScores: [0, 90, 10],
+        KplayerIds: []
+    },
+
+    {
+        question:
+            "What are your main strengths?",
+        video: "videoOption_3",
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
+        category: 2,
+        optionScores: [0, 90, 10],
+        KplayerIds: []
+    },
+
+    {
+        question:
+            "What is your biggest weakness?",
+        video: "videoOption_3",
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
         category: 2,
         optionScores: [0, 90, 10],
         KplayerIds: []
