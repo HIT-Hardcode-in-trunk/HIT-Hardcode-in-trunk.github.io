@@ -16,7 +16,7 @@ const quizdata = [
         question:"Why have you applied for the job?",
         video: "videoOption_0",
         options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
         category: 1,
         optionScores :[30,50,20],
         KplayerIds: ["kaltura_player_1628690985","kaltura_player_1628693936","kaltura_player_1628691144"],
@@ -26,7 +26,7 @@ const quizdata = [
         question: "What skills and personal qualities make you suitable for the job?",
         video:  "videoOption_1",
         options: ["Answer A", "Option B", "Answer C"],
-        answer: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
         category: 2,
         optionScores: [30, 50, 20],
         KplayerIds: []
@@ -36,7 +36,7 @@ const quizdata = [
             "What do you know about our company?",
         video: "videoOption_2",
         options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
         category: 2,
         optionScores: [30, 50, 20],
         KplayerIds: []
@@ -47,7 +47,7 @@ const quizdata = [
             "What are your main strengths?",
         video: "videoOption_3",
         options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
         category: 2,
         optionScores: [30, 50, 20],
         KplayerIds: []
@@ -58,7 +58,7 @@ const quizdata = [
             "What is your biggest weakness?",
         video: "videoOption_4",
         options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
         category: 2,
         optionScores: [0, 90, 10],
         KplayerIds: []
