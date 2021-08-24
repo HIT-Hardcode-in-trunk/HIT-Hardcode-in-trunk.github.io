@@ -18,25 +18,63 @@ const quizdata = [
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer A", "Answer B", "Answer C"],
         category: 1,
-        optionScores :[20,60,100]
+        optionScores :[30,50,20],
+        KplayerIds: ["kaltura_player_1628690985","kaltura_player_1628693936","kaltura_player_1628691144"],
+
     },
     {
-        question:
-            "Second Question and",
+        question: "What skills and personal qualities make you suitable for the job?",
         video:  "videoOption_1",
-        options: ["Option 1", "Option 2", "Option 3"],
-        answer: ["Option 1", "Option 2", "Option 3"],
+        options: ["Answer A", "Option B", "Answer C"],
+        answer: ["Answer A", "Answer B", "Answer C"],
         category: 2,
-        optionScores: [20, 60, 100]
+        optionScores: [30, 50, 20],
+        KplayerIds: []
     },
     {
         question:
-            "Very Important Question",
-        video: "videoOption_3",
-        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
-        answer: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
+            "What do you know about our company?",
+        video: "videoOption_2",
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer A", "Answer B", "Answer C"],
         category: 2,
-        optionScores: [20, 60, 100]
+        optionScores: [30, 50, 20],
+        KplayerIds: []
+    },
+
+    {
+        question:
+            "What are your main strengths?",
+        video: "videoOption_3",
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer A", "Answer B", "Answer C"],
+        category: 2,
+        optionScores: [30, 50, 20],
+        KplayerIds: []
+    },
+
+    {
+        question:
+            "What is your biggest weakness?",
+        video: "videoOption_",
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer A", "Answer B", "Answer C"],
+        category: 2,
+        optionScores: [0, 90, 10],
+        KplayerIds: []
+    },
+
+
+    {
+        question:"Would you like to ask any questions?",
+        video: "videoOption_6",
+        options: [
+            "Question A: I don’t have any questions as I think you have covered everything during the interview.", 
+            "Question B: Can you give me a bit more information about the team that I would be working with?", 
+            "Question C: What are the next steps in the process?"],
+        answer: ["Answer B"],
+        category: 2,
+        optionScores: [0, 90, 10]
     }
  
 ];
