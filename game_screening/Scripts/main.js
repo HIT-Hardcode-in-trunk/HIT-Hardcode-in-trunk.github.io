@@ -1,53 +1,70 @@
 var $progressValue = 0;
 var resultList = [];
 var scoreList = [];
-var video1 = document.getElementsByClassName ('.video1');
+
+
 
 const quizdata = [
     {
-        question: "Why have you applied for the job?",
+    question:"Tell me about yourself.",
+        video: "videoOption_0",
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: "Answer A",
+        // answerDescription: [
+            
+        //     "Answer A: This is the best answer as it follows the STARR method and demonstrates well the candidate’s ability to work in a team. It also covers many of the skills that the employer is looking for." + "<br></br>",
+        //     "Answer B: This is the poorest answer as it isn’t full enough – it doesn’t give a detailed description and doesn’t follow the STARR method." + "<br></br>",
+        //     "Answer C: This is a fairly good answer as it follows the STARR method, but the candidate should have concentrated more on describing specifically what they did, rather than the team as a whole."
         
-        videoOption: "videoOption_0",
-        playerId: "kaltura_player_1628782791",
-        options: ["Answer A", "Answer B:", "Answer C:"],
-        answer: ["Answer B:"],
-        answerVideoOptions: ["videoOption_0","videoOption_1","videoOption_2"],
-        answerVidoePlayerIds: ["kaltura_player_1628782791","kaltura_player_1628782914","kaltura_player_1628782968"],
-        category: 1,
-        optionScores :[0,50,10]
-    },
+        // ],
 
-    {
-        question:
-            "Second Question",
         
-        videoOption: "videoOption_1",
-playerId: "kaltura_player_1628782914",
-        options: ["Option 1", "Option 2", "Option 3"],
-        answer: ["Option 2"],
+        category: 1,
+        optionScores :[0, 50, 10]
+    },
+    {
+        question:"Why are you interested in this position?",
+        video:  "videoOption_1",
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
         category: 2,
         optionScores: [0, 50, 10]
     },
     {
-        question:
-            "Question 3",
-        
-        videoOption: "videoOption_2",
-playerId: "kaltura_player_1628782968",
-        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
-        answer: ["Very Important Option 2"],
+        question:"What do you know about our company?",
+        video: "videoOption_3",
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer C"],
+        category: 2,
+        optionScores: [0, 90, 10]
+    },
+ 
+    {
+        question:"Tell me about a time when you used your written or verbal communication skills effectively.",
+        video: "videoOption_4",
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer A"],
         category: 2,
         optionScores: [0, 90, 10]
     },
 
     {
-        question:
-            "Question 4",
-        
-        videoOption: "videoOption_3",
-playerId: "kaltura_player_1628782968",
-        options: ["Very Important Option 1", "Very Important Option 2", "Very Important Option 3"],
-        answer: ["Very Important Option 2"],
+        question:"Describe yourself in three words",
+        video: "videoOption_5",
+        options: ["Answer A", "Answer B", "Answer C"],
+        answer: ["Answer B"],
+        category: 2,
+        optionScores: [0, 90, 10]
+    },
+
+    {
+        question:"Would you like to ask any questions?",
+        video: "videoOption_6",
+        options: [
+            "Question A: What are the next steps in the process? ", 
+            "Question B: What would you say is the most challenging part of the job?", 
+            "Question C: When will I find out if I’ve got the job?"],
+        answer: ["Answer B"],
         category: 2,
         optionScores: [0, 90, 10]
     }
@@ -153,7 +170,7 @@ function genResultArray(results, wrong, scoreTotal, scoreMaxPossTotal) {
 
 //// direct percentage //////////
 function directPercent(number, total) {
-    if(total==0) return -1//bad parameter error
+    if(number==0 && total==0) return -1//bad parameter error
     if (number == 0) return 0
     else return 100*((number / total).toFixed(2));
 }
@@ -415,13 +432,12 @@ $(document).ready(function () {
     $(".videoOptions > div").addClass("hidden");
 
     var presentIndex = 0;
-    
+    $("#videoOption_" + presentIndex).removeClass("hidden");
     var clicked = 0;
     //var clickedIdx = 0;
     var clickedScore = 0;
     var maxPossScore = 0;
     var questions = generateQuestions();
-$("#" + questions[presentIndex].videoOption).removeClass("hidden");
     renderQuiz(questions, presentIndex);
     getProgressindicator(questions.length);
 
@@ -452,18 +468,14 @@ $("#" + questions[presentIndex].videoOption).removeClass("hidden");
 
         $(this).addClass("hidden");
         $(".videoOptions > div").addClass("hidden");
-        var kdp = document.getElementById(questions[presentIndex].playerId);
-        kdp.sendNotification("doStop");
         presentIndex++;
-        $("#" + questions[presentIndex].videoOption).removeClass("hidden");
+        $("#videoOption_" + presentIndex).removeClass("hidden");
         renderQuiz(questions, presentIndex);
         changeProgressValue();
     });
 
     $("#submit").on("click", function (e) {
-        addClickedAnswerToResult(questions, presentIndex, clicked, clickedScore, maxPossScore);
-        var kdp = document.getElementById(questions[presentIndex].playerId);
-        kdp.sendNotification("doStop");
+        addClickedAnswerToResult(questions, presentIndex, clicked,clickedScore,maxPossScore);
         $(".multipleChoiceQues").hide();
         $(".resultArea").show();
         renderResult(resultList);
