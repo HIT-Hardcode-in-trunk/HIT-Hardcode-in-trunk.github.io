@@ -62,9 +62,9 @@ const quizdata = [
         question:"Would you like to ask any questions?",
         video: "videoOption_5",
         options: [
-            "Question A: I don’t have any questions as I think you have covered everything during the interview.", 
-            "Question B: Can you give me a bit more information about the team that I would be working with?", 
-            "Question C: What are the next steps in the process?"],
+            "Question A: How often would I work weekends?", 
+            "Question B: Can you tell me a bit more about the training?", 
+            "Question C: Would I get the chance to work with designers?"],
         answer: ["Answer B"],
         category: 2,
         optionScores: [0, 90, 10]
