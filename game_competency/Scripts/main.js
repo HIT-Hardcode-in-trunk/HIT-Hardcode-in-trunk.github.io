@@ -2,12 +2,11 @@ var $progressValue = 0;
 var resultList = [];
 var scoreList = [];
 
-  
 
 
 const quizdata = [
     {
-        question:"Can you tell me about a time when you successfully completed a task as part of a team?",
+    question:"Can you tell me about a time when you successfully completed a task as part of a team?",
         video: "videoOption_0",
         options: ["Answer A", "Answer B", "Answer C"],
         answer: "Answer A",
@@ -69,7 +68,7 @@ const quizdata = [
         category: 2,
         optionScores: [0, 90, 10]
     }
-
+ 
 ];
 /** Random shuffle questions **/
 function shuffleArray(question) {
@@ -149,7 +148,7 @@ function renderQuiz(questions, index) {
 
 /** Return correct answer of a question ***/
 function getCorrectAnswer(questions, index) {
-    return "This is correct answer: " + questions[index].answer +"<br></br>" + questions[index].answerDescription;
+    return questions[index].answer;
 }
 
 /** pushanswers in array **/
