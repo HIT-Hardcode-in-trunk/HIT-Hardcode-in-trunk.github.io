@@ -56,7 +56,7 @@ const quizdata = [
     {
         question:
             "What is your biggest weakness?",
-        video: "videoOption_",
+        video: "videoOption_4",
         options: ["Answer A", "Answer B", "Answer C"],
         answer: ["Answer A", "Answer B", "Answer C"],
         category: 2,
@@ -67,7 +67,7 @@ const quizdata = [
 
     {
         question:"Would you like to ask any questions?",
-        video: "videoOption_6",
+        video: "videoOption_5",
         options: [
             "Question A: I don’t have any questions as I think you have covered everything during the interview.", 
             "Question B: Can you give me a bit more information about the team that I would be working with?", 
