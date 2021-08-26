@@ -165,16 +165,22 @@ Main .activities {
     position: relative;
     display: grid;
     place-items: end center;
-
-    .card-content {
-      position: absolute;
-      .cta-btn {
-        padding: 0.8em 2em;
-        background: white;
-        transform: translateY(30px);
-        border-radius: 10px;
-        border: none;
-      }
+    .activities-wrapper .card-content button {
+      padding: 0.8em 2em;
+      background: $background-red;
+      transform: translateY(30px);
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease 0s;
+    }
+  
+    .activities-wrapper .card-content .cta-btn:hover {
+      background-color: $background-blue;
+      box-shadow: 0px 15px 20px rgba(128, 0, 0, 0.2);
+      color: #fff;
+    }
     }
   }
 
