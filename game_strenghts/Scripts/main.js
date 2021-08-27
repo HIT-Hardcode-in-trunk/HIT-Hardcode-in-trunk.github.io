@@ -6,69 +6,68 @@ var scoreList = [];
 
 const quizdata = [
     {
-        question:"Why have you applied for the job?",
+    question:"Can you tell me about a time when you successfully completed a task as part of a team?",
         video: "videoOption_0",
         options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer B"],
+        answer: "Answer A",
+        answerDescription: [
+            
+            "Answer A: This is the best answer as it follows the STARR method and demonstrates well the candidate’s ability to work in a team. It also covers many of the skills that the employer is looking for." + "<br></br>",
+            "Answer B: This is the poorest answer as it isn’t full enough – it doesn’t give a detailed description and doesn’t follow the STARR method." + "<br></br>",
+            "Answer C: This is a fairly good answer as it follows the STARR method, but the candidate should have concentrated more on describing specifically what they did, rather than the team as a whole."
+        
+        ],
+
+        
         category: 1,
-        optionScores :[30,50,20],
-        KplayerIds: ["kaltura_player_1628690985","kaltura_player_1628693936","kaltura_player_1628691144"],
-
+        optionScores :[0, 50, 10]
     },
-    {
-        question: "What skills and personal qualities make you suitable for the job?",
-        video:  "videoOption_1",
-        options: ["Answer A", "Option B", "Answer C"],
-        answer: ["Answer B"],
-        category: 2,
-        optionScores: [30, 50, 20],
-        KplayerIds: []
-    },
-    {
-        question:
-            "What do you know about our company?",
-        video: "videoOption_2",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer B"],
-        category: 2,
-        optionScores: [30, 50, 20],
-        KplayerIds: []
-    },
+    // {
+    //     question:"Describe a situation where you delivered good customer service.",
+    //     video:  "videoOption_1",
+    //     options: ["Answer A", "Answer B", "Answer C"],
+    //     answer: ["Answer B"],
+    //     category: 2,
+    //     optionScores: [0, 50, 10]
+    // },
+    // {
+    //     question:"Tell me about a time when you’ve had to complete a project or task to a tight deadline.",
+    //     video: "videoOption_3",
+    //     options: ["Answer A", "Answer B", "Answer C"],
+    //     answer: ["Answer C"],
+    //     category: 2,
+    //     optionScores: [0, 90, 10]
+    // },
+ 
+    // {
+    //     question:"Tell me about a time when you used your written or verbal communication skills effectively.",
+    //     video: "videoOption_4",
+    //     options: ["Answer A", "Answer B", "Answer C"],
+    //     answer: ["Answer A"],
+    //     category: 2,
+    //     optionScores: [0, 90, 10]
+    // },
 
-    {
-        question:
-            "What are your main strengths?",
-        video: "videoOption_3",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer B"],
-        category: 2,
-        optionScores: [30, 50, 20],
-        KplayerIds: []
-    },
+    // {
+    //     question:"Describe a situation where you used your organisation skills effectively?",
+    //     video: "videoOption_5",
+    //     options: ["Answer A", "Answer B", "Answer C"],
+    //     answer: ["Answer B"],
+    //     category: 2,
+    //     optionScores: [0, 90, 10]
+    // },
 
-    {
-        question:
-            "What is your biggest weakness?",
-        video: "videoOption_4",
-        options: ["Answer A", "Answer B", "Answer C"],
-        answer: ["Answer B"],
-        category: 2,
-        optionScores: [0, 90, 10],
-        KplayerIds: []
-    },
-
-
-    {
-        question:"Would you like to ask any questions?",
-        video: "videoOption_5",
-        options: [
-            "Question A: How often would I work weekends?", 
-            "Question B: Can you tell me a bit more about the training?", 
-            "Question C: Would I get the chance to work with designers?"],
-        answer: ["Answer B"],
-        category: 2,
-        optionScores: [0, 90, 10]
-    }
+    // {
+    //     question:"Would you like to ask any questions?",
+    //     video: "videoOption_6",
+    //     options: [
+    //         "Question A: I don’t have any questions as I think you have covered everything during the interview.", 
+    //         "Question B: Can you give me a bit more information about the team that I would be working with?", 
+    //         "Question C: What are the next steps in the process?"],
+    //     answer: ["Answer B"],
+    //     category: 2,
+    //     optionScores: [0, 90, 10]
+    // }
  
 ];
 /** Random shuffle questions **/
@@ -149,7 +148,7 @@ function renderQuiz(questions, index) {
 
 /** Return correct answer of a question ***/
 function getCorrectAnswer(questions, index) {
-    return questions[index].answer;
+    return questions[index].answer + questions[index].answerDescription;
 }
 
 /** pushanswers in array **/
