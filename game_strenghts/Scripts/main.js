@@ -148,7 +148,7 @@ function renderQuiz(questions, index) {
 
 /** Return correct answer of a question ***/
 function getCorrectAnswer(questions, index) {
-    return "This is a correct answer" + questions[index].answer + "<br></br>" + questions[index].answerDescription;
+    return "This is a correct answer: " + questions[index].answer + "<br></br>" + questions[index].answerDescription;
 }
 
 /** pushanswers in array **/
